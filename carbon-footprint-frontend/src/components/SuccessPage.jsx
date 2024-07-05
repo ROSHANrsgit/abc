@@ -9,38 +9,43 @@ import wegrowlogo from "../assets/Images/WeGrowLogo.svg";
 import Meera from "../assets/Images/Meera.svg";
 import Merin from "../assets/Images/Merin.svg";
 import { GlobalStateContext } from "../signupContext";
+import "../components/style.css";
 
 const Certificate = React.forwardRef((props, ref) => {
   const { data, emission, todate } = props;
   return (
     <div
       ref={ref}
-      className="w-[425.5px] h-[600px] border-[14px] border-[#40A578] relative "
+      className="w-[350px] h-[493.5px] md:w-[425.5px] md:h-[600px] border-[14px] border-[#40A578] relative "
     >
-      <div className="flex justify-around items-center mt-[44px]">
+      <div className="flex justify-around items-center md:mt-[28px] md:mb-[6px] mb-[5px] ">
         <img src={wegrowlogo} alt="We Grow Forest Logo" className="w-20" />
       </div>
       <div className="text-center">
-        <h1 className="font-semibold text-[9px]">
+        <h1 className="outfit-medium text-[9px]">
           This certificate acknowledges that
         </h1>
-        <h2 className="text-lg font-bold text-[#40A578]">
+        <h2 className="text-base md:text-lg outfit-bold text-[#40A578] -my-1 md:my-0 ">
           {data.name.toUpperCase()}
         </h2>
-        <p className="font-semibold text-[9px]">has successfully offset</p>
-        <p className="text-sm font-bold text-[#40A578]">
+        <p className="outfit-medium text-[9px]">has successfully offset</p>
+        <p className="text-sm outfit-bold text-[#40A578] ">
           {emission} kg of CO<sub>2</sub> emissions
         </p>
-        <p className="text-[9px] font-semibold">by supporting</p>
-        <p className="text-[9px] font-semibold">We Grow Forest Foundation's</p>
-        <p className="text-[9px] font-semibold">
+        <p className="text-[9px] outfit-medium -mb-[4px]">by supporting</p>
+        <p className="text-[9px] outfit-medium -mb-[4px]">
+          We Grow Forest Foundation's
+        </p>
+        <p className="text-[9px] outfit-medium">
           Verified Carbon Zero Day Projects
         </p>
-        <p className="text-sm text-[#40A578] font-bold">{todate}</p>
-        <p className="text-[9px] font-semibold">
+        <p className="text-sm text-[#40A578] outfit-bold -my-[2px] md:my-0">
+          {todate}
+        </p>
+        <p className="text-[9px] outfit-medium -mb-[4px]">
           Thank you for your commitment to combating climate change
         </p>
-        <p className="text-[9px] font-semibold mb-[9px]">
+        <p className="text-[9px] outfit-medium mb-[9px]">
           by offsetting your carbon footprint with
         </p>
       </div>
@@ -51,36 +56,49 @@ const Certificate = React.forwardRef((props, ref) => {
           className="w-36 mx-auto"
         />
       </div>
-      <div className="text-[9px] text-center font-semibold mb-[4px]">
+      <div className="text-[9px] text-center outfit-medium mb-[4px]">
         www.carbonzero.day
       </div>
 
-      <div className="flex justify-center gap-8 mr-8">
-        <img src={Meera} alt="Dr Meera Asmi" className="w-20 " />
-        <img src={Merin} alt="Dr Merin Jacob" className="w-12" />
+      <div className="flex justify-center gap-[20px] mr-[16px] ">
+        <img src={Meera} alt="Dr Meera Asmi" className="w-[60px] " />
+        <img src={Merin} alt="Dr Merin Jacob" className="w-[40px]" />
       </div>
 
       <div>
         <div
-          className="relative flex justify-center gap-8"
+          className="relative flex justify-center h-[158.5px] md:h-[215px] -mt-[2px]"
           style={{
             backgroundImage: `url(${footer})`,
             backgroundSize: "cover",
             backgroundPosition: "center",
             width: "100%",
-            height: "215px",
+
+            borderTop: "none",
           }}
         >
           <div className="flex justify-center gap-[20px]">
             <div className="text-end">
-              <p className="font-bold text-xs">Dr Meera Asmi</p>
-              <p className="text-[8px]">Chairwoman</p>
-              <p className="text-[8px]">We Grow Forest Foundation</p>
+              <p className="outfit-medium text-[7px] md:text-[10px] -mb-[1px] ">
+                Dr Meera Asmi
+              </p>
+              <p className="text-[6px] -mb-[2px] md:mb-0 outfit-medium">
+                Chairwoman
+              </p>
+              <p className="text-[6px] outfit-medium">
+                We Grow Forest Foundation
+              </p>
             </div>
             <div className="justify-start">
-              <p className="font-bold text-xs">Dr Merin Jacob</p>
-              <p className="text-[8px]">Managing Trustee</p>
-              <p className="text-[8px]">We Grow Forest Foundation</p>
+              <p className="outfit-medium text-[7px] md:text-[10px] -mb-[1px] ">
+                Dr Merin Jacob
+              </p>
+              <p className="text-[6px] -mb-[2px] md:mb-0 outfit-medium">
+                Managing Trustee
+              </p>
+              <p className="text-[6px] outfit-medium">
+                We Grow Forest Foundation
+              </p>
             </div>
           </div>
         </div>
@@ -145,7 +163,7 @@ const CarbonZeroDay = () => {
     const input = certificateRef.current;
     const scale = 2; // Increase this for higher resolution
     html2canvas(input, { scale: scale }).then((canvas) => {
-      const imgData = canvas.toDataURL("image/png", 1.0);
+      const imgData = canvas.toDataURL("image/png", 2.0);
       const pdf = new jsPDF({
         orientation: "portrait",
         unit: "pt",
@@ -184,36 +202,36 @@ const CarbonZeroDay = () => {
   return (
     <div
       style={{ backgroundImage: `url(${backgroundImage})` }}
-      className="bg-cover bg-center flex  items-center justify-around min-h-screen bg-gray-50"
+      className="font-sans bg-cover bg-center flex flex-col lg:flex-row items-center justify-around min-h-screen bg-gray-50 p-4"
     >
-      <div className="flex flex-col gap-8">
-        <div className="text-left pl-12 lg:pl-0 mb-10 lg:mb-0 sm:pl-6">
-          <h1 className="text-6xl font-extrabold text-[#40A578] text-left">
+      <div className="flex flex-col lg:gap-8 gap-[5px] mt-4">
+        <div className="text-left pl-0 lg:pl-0 mb-10  ">
+          <h1 className="font-outfit text-4xl lg:text-6xl outfit-extrabold text-[#40A578] text-left">
             Download
           </h1>
-          <h1 className="text-6xl font-extrabold text-[#9DDE8B] text-left">
+          <h1 className="text-4xl lg:text-6xl outfit-extrabold text-[#9DDE8B] text-left">
             Carbon Zero.Day
           </h1>
-          <h1 className="text-6xl font-extrabold text-[#40A578] text-left">
+          <h1 className="text-4xl lg:text-6xl outfit-extrabold text-[#40A578] text-left">
             Certificate
           </h1>
         </div>
-        <div className="flex space-x-4">
+        <div className="flex space-x-2">
           <button
-            className="w-full flex items-center justify-center py-2 px-4 bg-[#9DDE8B] text-white rounded-md hover:bg-[#40A578]"
+            className="w-full flex gap-4 lg:gap-16 items-center justify-start py-2 px-2 md:px-4 bg-[#9DDE8B] text-white rounded-md hover:bg-[#40A578]"
             onClick={downloadPDF}
           >
             PDF
-            <img src={downloadIcon} alt="Download" className="ml-2 h-5 w-5" />
+            <img src={downloadIcon} alt="Download" className="ml-2 h-4 w-5" />
           </button>
           <button
-            className="w-full flex items-center justify-center  py-2 px-4 bg-[#9DDE8B] text-white rounded-md hover:bg-[#40A578] "
+            className="w-full flex gap-4 lg:gap-16 items-center justify-start py-2 px-2 md:px-4 bg-[#9DDE8B] text-white rounded-md hover:bg-[#40A578] "
             onClick={downloadJPG}
           >
             JPG
-            <img src={downloadIcon} alt="Download" className="ml-2 h-5 w-5" />
+            <img src={downloadIcon} alt="Download" className="ml-2 h-4 w-5" />
           </button>
-          <button className="w-full py-2 px-4 bg-[#9DDE8B] text-white rounded-md hover:bg-[#40A578] ">
+          <button className="w-full py-2 px-2 md:px-4 bg-[#9DDE8B] text-white rounded-md hover:bg-[#40A578] ">
             <a
               href="https://www.wegrowforest.org"
               target="_blank"
@@ -225,7 +243,7 @@ const CarbonZeroDay = () => {
           </button>
         </div>
       </div>
-      <div className="mt-8 bg-white border-8 border-[#40A578] w-[425.5px] h-[600px] flex items-center justify-center mb-8">
+      <div className="md:mt-8 -mt-4 bg-white border-8 border-[#40A578] w-[350px] h-[493.5px] md:w-[425.5px] md:h-[600px] flex items-center justify-center">
         <CertificateDownload ref={certificateRef} emit={100} />
       </div>
     </div>

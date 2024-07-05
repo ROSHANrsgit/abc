@@ -1,5 +1,7 @@
 import React from "react";
 import backgroundImage from "../assets/Images/background.svg";
+import "../components/style.css";
+
 const FrontPage = () => {
   return (
     <div
@@ -7,16 +9,16 @@ const FrontPage = () => {
       className="bg-cover bg-center flex flex-col lg:flex-row items-center justify-center lg:justify-around h-screen "
     >
       <div className="text-left pl-12 lg:pl-0 mb-10 lg:mb-0 sm:pl-6">
-        <h1 className="text-5xl font-extrabold text-[#40A578] text-left">
+        <h1 className="text-5xl outfit-extrabold text-[#40A578] text-left">
           Carbon Zero.Day,
         </h1>
-        <h1 className="text-5xl font-extrabold text-[#9DDE8B] text-left">
+        <h1 className="text-5xl outfit-extrabold text-[#9DDE8B] text-left">
           Every Day
         </h1>
       </div>
       <div className="bg-[#9DDE8B] p-8 w-[350px] sm:w-[390px]">
         <form className="space-y-4">
-          <p className="text-white">
+          <p className="outfit-medium text-white ">
             Transform your climate impact by offsetting your carbon footprint
             with Carbon Zero Day.
           </p>
@@ -62,7 +64,7 @@ const FrontPage = () => {
           <div>
             <button
               type="submit"
-              className="w-full py-2 px-4 bg-[#40A578] text-white rounded-md focus:outline-none focus:ring-2 focus:ring-[#40A578]"
+              className="w-full py-2 px-4 bg-[#40A578] outfit-medium text-white rounded-md focus:outline-none focus:ring-2 focus:ring-[#40A578]"
             >
               Calculate my emission!
             </button>

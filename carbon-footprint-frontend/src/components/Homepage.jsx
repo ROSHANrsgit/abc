@@ -8,10 +8,12 @@ import businessImage from "../assets/Images/Business.svg";
 import travelImage from "../assets/Images/Travel.svg";
 import cardsImage from "../assets/Images/PrintedCards.svg";
 import backarrow from "../assets/Images/backarrow.svg";
-import { GlobalStateContext } from '../signupContext.jsx'
+import { GlobalStateContext } from "../signupContext.jsx";
+import "../components/style.css";
+
 const MainPage = () => {
-  const {formData} = useContext(GlobalStateContext)
-  
+  const { formData } = useContext(GlobalStateContext);
+
   const location = useLocation();
   const cardsData = [
     {
@@ -37,6 +39,7 @@ const MainPage = () => {
       title1: "OFFSET FOR",
       title2: "PRINTED CARDS",
       buttonText: "Calculate my emission!",
+      styleClass: "outfit-medium",
     },
   ];
 
@@ -48,10 +51,10 @@ const MainPage = () => {
       <div className="lg:items-start">
         <div className="mb-14 text-5xl lg:text-6xl flex justify-between">
           <div>
-            <h1 className="text-center font-bold text-[#40A578]">
+            <h1 className="text-center outfit-bold text-[#40A578]">
               Learn to be a
             </h1>
-            <h1 className="text-center font-bold text-[#9DDE8B]">
+            <h1 className="text-center outfit-bold text-[#9DDE8B]">
               Climate Hero
             </h1>
           </div>

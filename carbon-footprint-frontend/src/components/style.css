@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+.outfit-thin {
+    font-family: 'Outfit', sans-serif;
+    font-weight: 100;
+}
+
+.outfit-extralight {
+    font-family: 'Outfit', sans-serif;
+    font-weight: 200;
+}
+
+.outfit-light {
+    font-family: 'Outfit', sans-serif;
+    font-weight: 300;
+}
+
+.outfit-regular {
+    font-family: 'Outfit', sans-serif;
+    font-weight: 400;
+}
+
+.outfit-medium {
+    font-family: 'Outfit', sans-serif;
+    font-weight: 500;
+}
+
+.outfit-semibold {
+    font-family: 'Outfit', sans-serif;
+    font-weight: 600;
+}
+
+.outfit-bold {
+    font-family: 'Outfit', sans-serif;
+    font-weight: 700;
+}
+
+.outfit-extrabold {
+    font-family: 'Outfit', sans-serif;
+    font-weight: 800;
+}
+
+.outfit-black {
+    font-family: 'Outfit', sans-serif;
+    font-weight: 900;
+}
+
+.outfit-thin-italic {
+    font-family: 'Outfit', sans-serif;
+    font-weight: 100;
+    font-style: italic;
+}
+
+.outfit-extralight-italic {
+    font-family: 'Outfit', sans-serif;
+    font-weight: 200;
+    font-style: italic;
+}
+
+.outfit-light-italic {
+    font-family: 'Outfit', sans-serif;
+    font-weight: 300;
+    font-style: italic;
+}
+
+.outfit-regular-italic {
+    font-family: 'Outfit', sans-serif;
+    font-weight: 400;
+    font-style: italic;
+}
+
+.outfit-medium-italic {
+    font-family: 'Outfit', sans-serif;
+    font-weight: 500;
+    font-style: italic;
+}
+
+.outfit-semibold-italic {
+    font-family: 'Outfit', sans-serif;
+    font-weight: 600;
+    font-style: italic;
+}
+
+.outfit-bold-italic {
+    font-family: 'Outfit', sans-serif;
+    font-weight: 700;
+    font-style: italic;
+}
+
+.outfit-extrabold-italic {
+    font-family: 'Outfit', sans-serif;
+    font-weight: 800;
+    font-style: italic;
+}
+
+.outfit-black-italic {
+    font-family: 'Outfit', sans-serif;
+    font-weight: 900;
+    font-style: italic;
+}
