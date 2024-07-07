@@ -8,6 +8,7 @@ import flight from "../assets/Images/flight.svg";
 import scooter from "../assets/Images/scooter.svg";
 import truck from "../assets/Images/truck.svg";
 import backarrow from "../assets/Images/backarrow.svg";
+import "../components/style.css";
 
 import {
   PETROL_EMISSION_FACTOR,
@@ -247,7 +248,7 @@ const TravelForm = () => {
         return (
           <div className="w-[360px] mx-auto md:w-[600px]">
             <div className="mb-8">
-              <label className="block text-gray-700">
+              <label className="block outfit-medium text-gray-700">
                 Trip (Round Trip/One way)
               </label>
               <select
@@ -255,7 +256,7 @@ const TravelForm = () => {
                 name="tripType"
                 value={formData.tripType}
                 onChange={handleChange}
-                className="mt-1 block w-full px-3 py-2 bg-white dark:bg-gray-700 border border-gray-300 dark:border-gray-600 rounded-md shadow-sm focus:outline-none focus:ring-[#9DDE8B] focus:border-[#9DDE8B]"
+                className="mt-1 block outfit-normal w-full px-3 py-2 bg-white dark:bg-gray-700 border border-gray-300 dark:border-gray-600 rounded-md shadow-sm focus:outline-none focus:ring-[#9DDE8B] focus:border-[#9DDE8B]"
               >
                 <option>Select a trip type</option>
                 <option>Round Trip</option>
@@ -264,7 +265,7 @@ const TravelForm = () => {
             </div>
             <div className="flex flex-row justify-center items-center gap-4">
               <div className="mb-8 w-[300px]">
-                <label className="block text-gray-700">
+                <label className="block outfit-medium text-gray-700">
                   Origin Airport (code or name)
                 </label>
                 <input
@@ -277,7 +278,7 @@ const TravelForm = () => {
                 />
               </div>
               <div className="mb-8 w-[300px]">
-                <label className="block text-gray-x`700">
+                <label className="block outfit-medium text-gray-x`700">
                   Destination Airport (code or name)
                 </label>
                 <input
@@ -291,7 +292,7 @@ const TravelForm = () => {
               </div>
             </div>
             <div className="mb-8">
-              <label className="block text-gray-700">
+              <label className="block outfit-medium text-gray-700">
                 Cabin Class (Economy/Business/First)
               </label>
               <select
@@ -300,7 +301,7 @@ const TravelForm = () => {
                 type="text"
                 value={formData.cabinClass}
                 onChange={handleChange}
-                className="mt-1 block w-full px-3 py-2 bg-white dark:bg-gray-700 border border-gray-300 dark:border-gray-600 rounded-md shadow-sm focus:outline-none focus:ring-[#9DDE8B] focus:border-[#9DDE8B]"
+                className="mt-1 block outfit-normal w-full px-3 py-2 bg-white dark:bg-gray-700 border border-gray-300 dark:border-gray-600 rounded-md shadow-sm focus:outline-none focus:ring-[#9DDE8B] focus:border-[#9DDE8B]"
               >
                 <option>Select a cabin class</option>
                 <option>Economy</option>
@@ -309,7 +310,7 @@ const TravelForm = () => {
               </select>
             </div>
             <div className="mb-8">
-              <label className="block text-gray-700">
+              <label className="block outfit-medium text-gray-700">
                 Number of passengers
               </label>
               <input
@@ -327,7 +328,7 @@ const TravelForm = () => {
         return (
           <div className="w-[360px] mx-auto md:w-[600px]">
             <div className="mb-8">
-              <label className="block text-gray-700">
+              <label className="block outfit-medium text-gray-700">
                 CC of your {selectedOption}
               </label>
               <input
@@ -340,13 +341,15 @@ const TravelForm = () => {
               />
             </div>
             <div className="mb-8">
-              <label className="block text-gray-700">Fuel type</label>
+              <label className="block outfit-medium text-gray-700">
+                Fuel type
+              </label>
               <select
                 id="fuelVehicle"
                 name="fuelVehicle"
                 value={formData.fuelVehicle}
                 onChange={handleChange}
-                className="mt-1 block w-full px-3 py-2 bg-white dark:bg-gray-700 border border-gray-300 dark:border-gray-600 rounded-md shadow-sm focus:outline-none focus:ring-[#9DDE8B] focus:border-[#9DDE8B]"
+                className="mt-1 block w-full px-3 py-2 bg-white outfit-normal dark:bg-gray-700 border border-gray-300 dark:border-gray-600 rounded-md shadow-sm focus:outline-none focus:ring-[#9DDE8B] focus:border-[#9DDE8B]"
               >
                 <option>Select a fuel type</option>
                 <option>Petrol</option>
@@ -355,7 +358,7 @@ const TravelForm = () => {
               </select>
             </div>
             <div className="mb-8">
-              <label className="block text-gray-700">
+              <label className="block outfit-medium text-gray-700">
                 Distance covered (km)
               </label>
               <input
@@ -368,7 +371,7 @@ const TravelForm = () => {
               />
             </div>
             <div className="mb-8">
-              <label className="block text-gray-700">
+              <label className="block outfit-medium text-gray-700">
                 Age of your vehicle (yrs)
               </label>
               <input
@@ -393,7 +396,7 @@ const TravelForm = () => {
       <div>
         <div className="rounded-lg w-full">
           <div className="flex justify-between items-center">
-            <h1 className="text-6xl font-bold text-left text-[#40A578] dark:text-gray-100 mb-8 mt-4 md:mt-32 xl:mt-8 h-fit">
+            <h1 className="text-6xl outfit-bold text-left text-[#40A578] dark:text-gray-100 mb-8 mt-4 md:mt-32 xl:mt-8 h-fit">
               Travel
             </h1>
             <img

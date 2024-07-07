@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import backgroundImage from "../assets/Images/background.svg";
 import { useLocation, useNavigate } from "react-router-dom";
 import backarrow from "../assets/Images/backarrow.svg";
+import "../components/style.css";
 
 import {
   STANDARD_PAPER_EMISSION_FACTOR,
@@ -85,7 +86,7 @@ const PrintedcardForm = () => {
     >
       <div className="rounded-lg p-8 w-full lg:ml-28 lg:mr-28 lg:mt-16 sm:mt-200">
         <div className="flex justify-between items-center">
-          <h1 className="text-6xl font-bold text-left text-[#40A578] dark:text-gray-100 mb-[50px]">
+          <h1 className="text-6xl outfit-bold text-left text-[#40A578] dark:text-gray-100 mb-[50px]">
             Printed Cards
           </h1>
           <img
@@ -98,7 +99,7 @@ const PrintedcardForm = () => {
         <form className="" onSubmit={handleSubmit}>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3">
             <div className="mb-6">
-              <label className="block text-sm font-medium text-gray-700 dark:text-gray-400">
+              <label className="block text-sm outfit-medium text-gray-700 dark:text-gray-400">
                 Weight of a single card (g)
               </label>
               <input
@@ -110,7 +111,7 @@ const PrintedcardForm = () => {
               />
             </div>
             <div className="mb-6">
-              <label className="block text-sm font-medium text-gray-700 dark:text-gray-400">
+              <label className="block text-sm outfit-medium text-gray-700 dark:text-gray-400">
                 Number of cards printed
               </label>
               <input
@@ -122,14 +123,14 @@ const PrintedcardForm = () => {
               />
             </div>
             <div className="mb-6">
-              <label className="block text-sm font-medium text-gray-700 dark:text-gray-400">
+              <label className="block text-sm outfit-medium text-gray-700 dark:text-gray-400">
                 Paper type
               </label>
               <select
                 name="paperType"
                 value={formData.paperType}
                 onChange={handleChange}
-                className="mt-1 block w-full px-3 py-2 bg-white dark:bg-gray-700 border border-gray-300 dark:border-gray-600 rounded-md shadow-sm focus:outline-none focus:ring-[#9DDE8B] focus:border-[#9DDE8B] sm:text-sm"
+                className="mt-1 block w-full outfit-medium px-3 py-2 bg-white dark:bg-gray-700 border border-gray-300 dark:border-gray-600 rounded-md shadow-sm focus:outline-none focus:ring-[#9DDE8B] focus:border-[#9DDE8B] sm:text-sm"
               >
                 <option value="">Select a paper type</option>
                 <option value="standard">Standard</option>
@@ -138,14 +139,14 @@ const PrintedcardForm = () => {
               </select>
             </div>
             <div className="mb-6">
-              <label className="block text-sm font-medium text-gray-700 dark:text-gray-400">
+              <label className="block text-sm outfit-medium text-gray-700 dark:text-gray-400">
                 Printing method
               </label>
               <select
                 name="printingMethod"
                 value={formData.printingMethod}
                 onChange={handleChange}
-                className="mt-1 block w-full px-3 py-2 bg-white dark:bg-gray-700 border border-gray-300 dark:border-gray-600 rounded-md shadow-sm focus:outline-none focus:ring-[#9DDE8B] focus:border-[#9DDE8B] sm:text-sm"
+                className="mt-1 block w-full px-3 py-2 outfit-medium bg-white dark:bg-gray-700 border border-gray-300 dark:border-gray-600 rounded-md shadow-sm focus:outline-none focus:ring-[#9DDE8B] focus:border-[#9DDE8B] sm:text-sm"
               >
                 <option value="">Select a printing method</option>
                 <option value="digital">Digital</option>
@@ -153,14 +154,14 @@ const PrintedcardForm = () => {
               </select>
             </div>
             <div className="mb-6">
-              <label className="block text-sm font-medium text-gray-700 dark:text-gray-400">
+              <label className="block text-sm outfit-medium text-gray-700 dark:text-gray-400">
                 Lamination type
               </label>
               <select
                 name="LaminationType"
                 value={formData.LaminationType}
                 onChange={handleChange}
-                className="mt-1 block w-full px-3 py-2 bg-white dark:bg-gray-700 border border-gray-300 dark:border-gray-600 rounded-md shadow-sm focus:outline-none focus:ring-[#9DDE8B] focus:border-[#9DDE8B] sm:text-sm"
+                className="mt-1 block w-full px-3 outfit-medium py-2 bg-white dark:bg-gray-700 border border-gray-300 dark:border-gray-600 rounded-md shadow-sm focus:outline-none focus:ring-[#9DDE8B] focus:border-[#9DDE8B] sm:text-sm"
               >
                 <option value="">Select a lamination type</option>
                 <option value="Glossy">Glossy</option>
@@ -168,14 +169,14 @@ const PrintedcardForm = () => {
               </select>
             </div>
             <div className="mb-6">
-              <label className="block text-sm font-medium text-gray-700 dark:text-gray-400">
+              <label className="block text-sm outfit-medium text-gray-700 dark:text-gray-400">
                 Packaging type
               </label>
               <select
                 name="PackingType"
                 value={formData.PackingType}
                 onChange={handleChange}
-                className="mt-1 block w-full px-3 py-2 bg-white dark:bg-gray-700 border border-gray-300 dark:border-gray-600 rounded-md shadow-sm focus:outline-none focus:ring-[#9DDE8B] focus:border-[#9DDE8B] sm:text-sm"
+                className="mt-1 block w-full px-3 py-2 outfit-medium bg-white dark:bg-gray-700 border border-gray-300 dark:border-gray-600 rounded-md shadow-sm focus:outline-none focus:ring-[#9DDE8B] focus:border-[#9DDE8B] sm:text-sm"
               >
                 <option value="">Select packaging type</option>
                 <option value="Plastic">Plastic</option>
@@ -188,7 +189,7 @@ const PrintedcardForm = () => {
         <div className="mt-10 mx-auto w-[250px]">
           <button
             onClick={handleSubmit}
-            className="mx-auto w-full w-[250px] text-center py-2 px-4 bg-[#9DDE8B] text-white rounded-md hover:bg-[#40A578] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#40A578] "
+            className="mx-auto w-full w-[250px] text-center outfit-medium py-2 px-4 bg-[#9DDE8B] text-white rounded-md hover:bg-[#40A578] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#40A578] "
           >
             Calculate my emission!
           </button>

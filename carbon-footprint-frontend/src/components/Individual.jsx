@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import backgroundImage from "../assets/Images/background.svg";
 import { useLocation, useNavigate } from "react-router-dom";
 import backarrow from "../assets/Images/backarrow.svg";
+import "../components/style.css";
 
 import {
   ELECTRICITY_EMISSION_FACTOR,
@@ -173,7 +174,7 @@ const Individual = () => {
     >
       <div className="rounded-lg p-8 w-full lg:ml-28 lg:mr-28">
         <div className="flex justify-between items-center">
-          <h1 className="text-6xl font-bold pt-4 text-left text-[#40A578] dark:text-gray-100 mb-8">
+          <h1 className="text-6xl outfit-bold pt-4 text-left text-[#40A578] dark:text-gray-100 mb-8">
             Individuals
           </h1>
           <img
@@ -247,7 +248,7 @@ const Individual = () => {
             <div className="" key={field.name}>
               <label
                 htmlFor={field.name}
-                className="block text-sm font-medium text-gray-700 dark:text-gray-400"
+                className="block text-sm outfit-medium text-gray-700 dark:text-gray-400"
               >
                 {field.label}
               </label>
@@ -265,7 +266,7 @@ const Individual = () => {
           <div>
             <label
               htmlFor="primaryFuelSource"
-              className="block text-sm font-medium text-gray-700 dark:text-gray-400"
+              className="block text-sm outfit-medium text-gray-700 dark:text-gray-400"
             >
               Primary Fuel Source
             </label>
@@ -291,7 +292,7 @@ const Individual = () => {
             <div>
               <label
                 htmlFor="fuelUsage"
-                className="block text-sm font-medium text-gray-700 dark:text-gray-400"
+                className="block text-sm outfit-medium text-gray-700 dark:text-gray-400"
               >
                 Monthly {formData.primaryFuelSource} Usage (liters)
               </label>
@@ -309,7 +310,7 @@ const Individual = () => {
           <div>
             <label
               htmlFor="dietType"
-              className="block text-sm font-medium text-gray-700 dark:text-gray-400"
+              className="block text-sm outfit-medium text-gray-700 dark:text-gray-400"
             >
               Diet Type
             </label>
@@ -332,7 +333,7 @@ const Individual = () => {
         <div className="mx-auto w-[250px]">
           <button
             onClick={handleSubmit}
-            className="w-full w-[250px] text-center py-2 px-4 bg-[#9DDE8B] text-white rounded-md hover:bg-[#40A578] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#40A578] "
+            className="w-full w-[250px] text-center py-2 px-4 bg-[#9DDE8B] text-white outfit-medium rounded-md hover:bg-[#40A578] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#40A578] "
           >
             Calculate my emission!
           </button>

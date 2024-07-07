@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import backgroundImage from "../assets/Images/background.svg";
 import { useLocation, useNavigate } from "react-router-dom";
 import backarrow from "../assets/Images/backarrow.svg";
+import "../components/style.css";
 
 import {
   EMP_CAR_EMISSION_FACTOR,
@@ -102,7 +103,7 @@ const BusinessForm = () => {
     >
       <div className="rounded-lg p-8 w-full lg:mx-28 ">
         <div className="flex justify-between items-center">
-          <h1 className="text-6xl font-bold text-left text-[#40A578] dark:text-gray-100 mb-12 mt-6 h-fit">
+          <h1 className="text-6xl outfit-bold text-left text-[#40A578] dark:text-gray-100 mb-12 mt-6 h-fit">
             Business
           </h1>
           <img
@@ -117,7 +118,7 @@ const BusinessForm = () => {
             <div className="mb-6">
               <label
                 htmlFor="numberEmployee"
-                className="block text-sm font-medium text-gray-700 dark:text-gray-400"
+                className="block text-sm outfit-medium text-gray-700 dark:text-gray-400"
               >
                 Number of employees
               </label>
@@ -133,7 +134,7 @@ const BusinessForm = () => {
             <div className="mb-8">
               <label
                 htmlFor="employeeCar"
-                className="block text-sm font-medium text-gray-700 dark:text-gray-400"
+                className="block text-sm outfit-medium text-gray-700 dark:text-gray-400"
               >
                 Employee commute distance by car (km)
               </label>
@@ -149,7 +150,7 @@ const BusinessForm = () => {
             <div className="mb-8">
               <label
                 htmlFor="employeePublic"
-                className="block text-sm font-medium text-gray-700 dark:text-gray-400"
+                className="block text-sm outfit-medium text-gray-700 dark:text-gray-400"
               >
                 Employee commute distance by public transport (km)
               </label>
@@ -165,7 +166,7 @@ const BusinessForm = () => {
             <div className="mb-8">
               <label
                 htmlFor="electricityConsumption"
-                className="block text-sm font-medium text-gray-700 dark:text-gray-400"
+                className="block text-sm outfit-medium text-gray-700 dark:text-gray-400"
               >
                 Electricity consumption (kWh)
               </label>
@@ -181,7 +182,7 @@ const BusinessForm = () => {
             <div className="mb-8">
               <label
                 htmlFor="naturalGas"
-                className="block text-sm font-medium text-gray-700 dark:text-gray-400"
+                className="block text-sm outfit-medium text-gray-700 dark:text-gray-400"
               >
                 Natural gas consumption (kg/m<sup>3</sup>)
               </label>
@@ -197,7 +198,7 @@ const BusinessForm = () => {
             <div className="mb-8">
               <label
                 htmlFor="petrolConsumption"
-                className="block text-sm font-medium text-gray-700 dark:text-gray-400"
+                className="block text-sm outfit-medium text-gray-700 dark:text-gray-400"
               >
                 Petrol consumption (litres)
               </label>
@@ -213,7 +214,7 @@ const BusinessForm = () => {
             <div className="mb-8">
               <label
                 htmlFor="dieselConsumption"
-                className="block text-sm font-medium text-gray-700 dark:text-gray-400"
+                className="block text-sm outfit-medium text-gray-700 dark:text-gray-400"
               >
                 Diesel consumption (litres)
               </label>
@@ -229,7 +230,7 @@ const BusinessForm = () => {
             <div className="mb-8">
               <label
                 htmlFor="gasolineConsumption"
-                className="block text-sm font-medium text-gray-700 dark:text-gray-400"
+                className="block text-sm outfit-medium text-gray-700 dark:text-gray-400"
               >
                 Gasoline consumption (litres)
               </label>
@@ -245,7 +246,7 @@ const BusinessForm = () => {
             <div className="mb-8">
               <label
                 htmlFor="flightTravel"
-                className="block text-sm font-medium text-gray-700 dark:text-gray-400"
+                className="block text-sm outfit-medium text-gray-700 dark:text-gray-400"
               >
                 Flight travel distance (km)
               </label>
@@ -261,7 +262,7 @@ const BusinessForm = () => {
             <div className="mb-8">
               <label
                 htmlFor="trainTravel"
-                className="block text-sm font-medium text-gray-700 dark:text-gray-400"
+                className="block text-sm outfit-medium text-gray-700 dark:text-gray-400"
               >
                 Train travel distance (km)
               </label>
@@ -277,7 +278,7 @@ const BusinessForm = () => {
             <div className="mb-8">
               <label
                 htmlFor="wasteProduced"
-                className="block text-sm font-medium text-gray-700 dark:text-gray-400"
+                className="block text-sm outfit-medium text-gray-700 dark:text-gray-400"
               >
                 Waste generated (litres)
               </label>
@@ -293,7 +294,7 @@ const BusinessForm = () => {
             <div className="mb-8">
               <label
                 htmlFor="waterUsed"
-                className="block text-sm font-medium text-gray-700 dark:text-gray-400"
+                className="block text-sm outfit-medium text-gray-700 dark:text-gray-400"
               >
                 Water used (litres)
               </label>
@@ -310,7 +311,7 @@ const BusinessForm = () => {
           <div className="flex items-center justify-center">
             <button
               type="submit"
-              className="mt-4 w-96 inline-flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-[#9DDE8B] hover:bg-[#40A578] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#9DDE8B]"
+              className="mt-4 w-96 inline-flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-sm outfit-medium text-white bg-[#9DDE8B] hover:bg-[#40A578] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#9DDE8B]"
             >
               Calculate my emission!
             </button>
