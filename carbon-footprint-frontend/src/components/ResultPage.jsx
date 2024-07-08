@@ -104,7 +104,7 @@ const EmissionsCard = () => {
   };
   const [selectedOption, setSelectedOption] = useState("100%"); //
 
-  if (!paymentSuccess) {
+  if (paymentSuccess) {
     return (
       <SuccessPage data={formData} emit={location.state.emit}></SuccessPage>
     );
@@ -118,7 +118,7 @@ const EmissionsCard = () => {
       >
         <div className="max-w-md lg:max-w-full mx-auto lg:mx-0 px-6 lg:p-4 rounded-lg ">
           <div className="mb-4">
-            <h2 className="text-5xl outfit-bold lg:mb-12 text-[#40A578]">
+            <h2 className="text-5xl outfit-bold mt-12 lg:mt-0 lg:mb-12 text-[#40A578]">
               Emissions
             </h2>
           </div>
@@ -246,7 +246,7 @@ const EmissionsCard = () => {
                   <div className="mt-2">
                     {/* Added Create your infibusiness card button */}
                     <button
-                      className="mx-auto outfit-medium flex justify-center items-center bg-[#9DDE8B] h-12 lg:w-60 text-center text-white px-4 py-2 rounded-md hover:bg-[#40A578] focus:outline-none focus:ring-[#40A578] text-sm "
+                      className="mx-auto outfit-medium flex justify-center items-center bg-[#9DDE8B] h-12 lg:w-60 text-center text-white px-4 py-8 sm:py-2  rounded-md hover:bg-[#40A578] focus:outline-none focus:ring-[#40A578] text-sm "
                       onClick={() => {
                         window.open(
                           "https://docs.google.com/forms/d/e/1FAIpQLScticnp69X320x_bJYMi8tw1EQdygWkPUNaX4kt2nsbblojhw/viewform?pli=1",
