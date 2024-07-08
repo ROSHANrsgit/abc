@@ -21,18 +21,21 @@ const MainPage = () => {
       title1: "OFFSET FOR",
       title2: "INDIVIDUAL",
       buttonText: "Calculate my emission!",
+      styleClass: "outfit-medium",
     },
     {
       image: businessImage,
       title1: "OFFSET FOR",
       title2: "BUSINESS",
       buttonText: "Calculate my emission!",
+      styleClass: "outfit-medium",
     },
     {
       image: travelImage,
       title1: "OFFSET FOR",
       title2: "TRAVEL",
       buttonText: "Calculate my emission!",
+      styleClass: "outfit-medium",
     },
     {
       image: cardsImage,
@@ -51,8 +54,8 @@ const MainPage = () => {
       <div className="lg:items-start">
         <div className="mb-14 text-5xl lg:text-6xl flex justify-between">
           <div>
-            <h1 className="text-center outfit-bold text-[#40A578]">
-              Learn to be a
+            <h1 className="text-center outfit-bold text-[#40A578] text-start">
+              Be a
             </h1>
             <h1 className="text-center outfit-bold text-[#9DDE8B]">
               Climate Hero

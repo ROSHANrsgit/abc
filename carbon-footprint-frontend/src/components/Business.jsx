@@ -128,7 +128,7 @@ const BusinessForm = () => {
                 name="numberEmployee"
                 value={formData.numberEmployee}
                 onChange={handleChange}
-                className="mt-1 block w-full px-3 py-2 bg-white dark:bg-gray-700 border border-gray-300 dark:border-gray-600 rounded-md shadow-sm focus:outline-none focus:ring-[#9DDE8B] focus:border-[#9DDE8B] sm:text-sm"
+                className="mt-1 block outfit-medium w-full px-3 py-2 bg-white dark:bg-gray-700 border border-gray-300 dark:border-gray-600 rounded-sm shadow-sm focus:outline-none focus:ring-[#9DDE8B] focus:border-[#9DDE8B] sm:text-sm"
               />
             </div>
             <div className="mb-8">
@@ -144,7 +144,7 @@ const BusinessForm = () => {
                 value={formData.employeeCar}
                 onChange={handleChange}
                 type="number"
-                className="mt-1 block w-full px-3 py-2 bg-white dark:bg-gray-700 border border-gray-300 dark:border-gray-600 rounded-md shadow-sm focus:outline-none focus:ring-[#9DDE8B] focus:border-[#9DDE8B] sm:text-sm"
+                className="mt-1 block outfit-medium w-full px-3 py-2 bg-white dark:bg-gray-700 border border-gray-300 dark:border-gray-600 rounded-sm shadow-sm focus:outline-none focus:ring-[#9DDE8B] focus:border-[#9DDE8B] sm:text-sm"
               />
             </div>
             <div className="mb-8">
@@ -160,7 +160,7 @@ const BusinessForm = () => {
                 value={formData.employeePublic}
                 onChange={handleChange}
                 type="number"
-                className="mt-1 block w-full px-3 py-2 bg-white dark:bg-gray-700 border border-gray-300 dark:border-gray-600 rounded-md shadow-sm focus:outline-none focus:ring-[#9DDE8B] focus:border-[#9DDE8B] sm:text-sm"
+                className="mt-1 block outfit-medium w-full px-3 py-2 bg-white dark:bg-gray-700 border border-gray-300 dark:border-gray-600 rounded-sm shadow-sm focus:outline-none focus:ring-[#9DDE8B] focus:border-[#9DDE8B] sm:text-sm"
               />
             </div>
             <div className="mb-8">
@@ -176,7 +176,7 @@ const BusinessForm = () => {
                 value={formData.electricityConsumption}
                 onChange={handleChange}
                 type="number"
-                className="mt-1 block w-full px-3 py-2 bg-white dark:bg-gray-700 border border-gray-300 dark:border-gray-600 rounded-md shadow-sm focus:outline-none focus:ring-[#9DDE8B] focus:border-[#9DDE8B] sm:text-sm"
+                className="mt-1 block outfit-medium w-full px-3 py-2 bg-white dark:bg-gray-700 border border-gray-300 dark:border-gray-600 rounded-sm shadow-sm focus:outline-none focus:ring-[#9DDE8B] focus:border-[#9DDE8B] sm:text-sm"
               />
             </div>
             <div className="mb-8">
@@ -192,7 +192,7 @@ const BusinessForm = () => {
                 value={formData.naturalGas}
                 onChange={handleChange}
                 type="number"
-                className="mt-1 block w-full px-3 py-2 bg-white dark:bg-gray-700 border border-gray-300 dark:border-gray-600 rounded-md shadow-sm focus:outline-none focus:ring-[#9DDE8B] focus:border-[#9DDE8B] sm:text-sm"
+                className="mt-1 block outfit-medium w-full px-3 py-2 bg-white dark:bg-gray-700 border border-gray-300 dark:border-gray-600 rounded-sm shadow-sm focus:outline-none focus:ring-[#9DDE8B] focus:border-[#9DDE8B] sm:text-sm"
               />
             </div>
             <div className="mb-8">
@@ -208,7 +208,7 @@ const BusinessForm = () => {
                 value={formData.petrolConsumption}
                 onChange={handleChange}
                 type="number"
-                className="mt-1 block w-full px-3 py-2 bg-white dark:bg-gray-700 border border-gray-300 dark:border-gray-600 rounded-md shadow-sm focus:outline-none focus:ring-[#9DDE8B] focus:border-[#9DDE8B] sm:text-sm"
+                className="mt-1 block outfit-medium w-full px-3 py-2 bg-white dark:bg-gray-700 border border-gray-300 dark:border-gray-600 rounded-sm shadow-sm focus:outline-none focus:ring-[#9DDE8B] focus:border-[#9DDE8B] sm:text-sm"
               />
             </div>
             <div className="mb-8">
@@ -224,7 +224,7 @@ const BusinessForm = () => {
                 value={formData.dieselConsumption}
                 onChange={handleChange}
                 type="number"
-                className="mt-1 block w-full px-3 py-2 bg-white dark:bg-gray-700 border border-gray-300 dark:border-gray-600 rounded-md shadow-sm focus:outline-none focus:ring-[#9DDE8B] focus:border-[#9DDE8B] sm:text-sm"
+                className="mt-1 block outfit-medium w-full px-3 py-2 bg-white dark:bg-gray-700 border border-gray-300 dark:border-gray-600 rounded-sm shadow-sm focus:outline-none focus:ring-[#9DDE8B] focus:border-[#9DDE8B] sm:text-sm"
               />
             </div>
             <div className="mb-8">
@@ -240,7 +240,7 @@ const BusinessForm = () => {
                 value={formData.gasolineConsumption}
                 onChange={handleChange}
                 type="number"
-                className="mt-1 block w-full px-3 py-2 bg-white dark:bg-gray-700 border border-gray-300 dark:border-gray-600 rounded-md shadow-sm focus:outline-none focus:ring-[#9DDE8B] focus:border-[#9DDE8B] sm:text-sm"
+                className="mt-1 block outfit-medium w-full px-3 py-2 bg-white dark:bg-gray-700 border border-gray-300 dark:border-gray-600 rounded-sm shadow-sm focus:outline-none focus:ring-[#9DDE8B] focus:border-[#9DDE8B] sm:text-sm"
               />
             </div>
             <div className="mb-8">
@@ -256,7 +256,7 @@ const BusinessForm = () => {
                 value={formData.flightTravel}
                 onChange={handleChange}
                 type="number"
-                className="mt-1 block w-full px-3 py-2 bg-white dark:bg-gray-700 border border-gray-300 dark:border-gray-600 rounded-md shadow-sm focus:outline-none focus:ring-[#9DDE8B] focus:border-[#9DDE8B] sm:text-sm"
+                className="mt-1 block outfit-medium w-full px-3 py-2 bg-white dark:bg-gray-700 border border-gray-300 dark:border-gray-600 rounded-sm shadow-sm focus:outline-none focus:ring-[#9DDE8B] focus:border-[#9DDE8B] sm:text-sm"
               />
             </div>
             <div className="mb-8">
@@ -272,7 +272,7 @@ const BusinessForm = () => {
                 value={formData.trainTravel}
                 onChange={handleChange}
                 type="number"
-                className="mt-1 block w-full px-3 py-2 bg-white dark:bg-gray-700 border border-gray-300 dark:border-gray-600 rounded-md shadow-sm focus:outline-none focus:ring-[#9DDE8B] focus:border-[#9DDE8B] sm:text-sm"
+                className="mt-1 block outfit-medium w-full px-3 py-2 bg-white dark:bg-gray-700 border border-gray-300 dark:border-gray-600 rounded-sm shadow-sm focus:outline-none focus:ring-[#9DDE8B] focus:border-[#9DDE8B] sm:text-sm"
               />
             </div>
             <div className="mb-8">
@@ -288,7 +288,7 @@ const BusinessForm = () => {
                 value={formData.wasteProduced}
                 onChange={handleChange}
                 type="number"
-                className="mt-1 block w-full px-3 py-2 bg-white dark:bg-gray-700 border border-gray-300 dark:border-gray-600 rounded-md shadow-sm focus:outline-none focus:ring-[#9DDE8B] focus:border-[#9DDE8B] sm:text-sm"
+                className="mt-1 block outfit-medium w-full px-3 py-2 bg-white dark:bg-gray-700 border border-gray-300 dark:border-gray-600 rounded-sm shadow-sm focus:outline-none focus:ring-[#9DDE8B] focus:border-[#9DDE8B] sm:text-sm"
               />
             </div>
             <div className="mb-8">
@@ -304,14 +304,14 @@ const BusinessForm = () => {
                 value={formData.waterUsed}
                 onChange={handleChange}
                 type="number"
-                className="mt-1 block w-full px-3 py-2 bg-white dark:bg-gray-700 border border-gray-300 dark:border-gray-600 rounded-md shadow-sm focus:outline-none focus:ring-[#9DDE8B] focus:border-[#9DDE8B] sm:text-sm"
+                className="mt-1 block outfit-medium w-full px-3 py-2 bg-white dark:bg-gray-700 border border-gray-300 dark:border-gray-600 rounded-sm shadow-sm focus:outline-none focus:ring-[#9DDE8B] focus:border-[#9DDE8B] sm:text-sm"
               />
             </div>
           </div>
           <div className="flex items-center justify-center">
             <button
               type="submit"
-              className="mt-4 w-96 inline-flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-sm outfit-medium text-white bg-[#9DDE8B] hover:bg-[#40A578] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#9DDE8B]"
+              className="mt-4 w-96 outfit-medium inline-flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-sm outfit-medium text-white bg-[#9DDE8B] hover:bg-[#40A578] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#9DDE8B]"
             >
               Calculate my emission!
             </button>

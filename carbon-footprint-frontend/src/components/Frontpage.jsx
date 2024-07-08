@@ -9,10 +9,10 @@ const FrontPage = () => {
       className="bg-cover bg-center flex flex-col lg:flex-row items-center justify-center lg:justify-around h-screen "
     >
       <div className="text-left pl-12 lg:pl-0 mb-10 lg:mb-0 sm:pl-6">
-        <h1 className="text-5xl outfit-extrabold text-[#40A578] text-left">
+        <h1 className="text-5xl outfit-bold text-[#40A578] text-left">
           Carbon Zero.Day,
         </h1>
-        <h1 className="text-5xl outfit-extrabold text-[#9DDE8B] text-left">
+        <h1 className="text-5xl outfit-bold text-[#9DDE8B] text-left">
           Every Day
         </h1>
       </div>

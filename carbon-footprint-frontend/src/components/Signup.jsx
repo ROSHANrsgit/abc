@@ -4,7 +4,7 @@ import backgroundImage from "../assets/Images/background.svg";
 import { GlobalStateContext } from "../signupContext";
 
 export default function SignUp() {
-  const {setFormData} = useContext(GlobalStateContext);
+  const { setFormData } = useContext(GlobalStateContext);
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [phone, setPhone] = useState("");
@@ -13,7 +13,7 @@ export default function SignUp() {
   const navigate = useNavigate();
   const handleSubmit = (e) => {
     e.preventDefault();
-        // Update the global state with form data
+    // Update the global state with form data
     setFormData({ name, email, phone, country, address });
     // Add your form submission logic here (e.g., API call)
     console.log("Form submitted:", { name, email, phone, country, address });
@@ -27,10 +27,10 @@ export default function SignUp() {
       className="bg-cover bg-center flex flex-col lg:flex-row items-center justify-center lg:justify-around h-screen "
     >
       <div className="text-left pl-12 lg:pl-0 mb-10 lg:mb-0 sm:pl-6">
-        <h1 className="text-5xl lg:text-7xl font-extrabold text-[#40A578] text-left">
+        <h1 className="text-5xl lg:text-7xl outfit-extrabold text-[#40A578] text-left">
           Carbon Zero.Day
         </h1>
-        <h1 className="text-5xl lg:text-7xl font-extrabold text-[#9DDE8B] text-left">
+        <h1 className="text-5xl lg:text-7xl outfit-extrabold text-[#9DDE8B] text-left">
           Every Day
         </h1>
       </div>
@@ -39,7 +39,7 @@ export default function SignUp() {
         onSubmit={handleSubmit}
       >
         <form className="space-y-4">
-          <p className="text-white">
+          <p className="text-white outfit-medium">
             Transform your climate impact by offsetting your carbon footprint
             with Carbon Zero Day.
           </p>

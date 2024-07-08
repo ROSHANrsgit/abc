@@ -8,7 +8,7 @@ import path from 'path';
 dotenv.config();
 
 const __filename = fileURLToPath(import.meta.url);
-const _dirname = path.dirname(_filename);
+const __dirname = path.dirname(__filename);
 
 const PORT = process.env.PORT || 4001;
 const app = express();
@@ -26,5 +26,5 @@ app.get('*', (req, res) => {
 app.use('/', paymentRoutes);
 
 app.listen(PORT, () => {
-    console.log(Backend Server listening on PORT ${PORT});
+    console.log(`Backend Server listening on PORT ${PORT}`);
 });

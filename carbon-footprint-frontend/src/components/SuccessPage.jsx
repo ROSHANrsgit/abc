@@ -218,14 +218,14 @@ const CarbonZeroDay = () => {
         </div>
         <div className="flex space-x-2">
           <button
-            className="w-full flex gap-4 lg:gap-16 items-center justify-start py-2 px-2 md:px-4 bg-[#9DDE8B] text-white rounded-md hover:bg-[#40A578]"
+            className="w-full flex gap-4 lg:gap-16 outfit-medium items-center justify-start py-2 px-2 md:px-4 bg-[#9DDE8B] text-white rounded-md hover:bg-[#40A578]"
             onClick={downloadPDF}
           >
             PDF
             <img src={downloadIcon} alt="Download" className="ml-2 h-4 w-5" />
           </button>
           <button
-            className="w-full flex gap-4 lg:gap-16 items-center justify-start py-2 px-2 md:px-4 bg-[#9DDE8B] text-white rounded-md hover:bg-[#40A578] "
+            className="w-full flex gap-4 lg:gap-16 outfit-medium items-center justify-start py-2 px-2 md:px-4 bg-[#9DDE8B] text-white rounded-md hover:bg-[#40A578] "
             onClick={downloadJPG}
           >
             JPG
@@ -236,7 +236,7 @@ const CarbonZeroDay = () => {
               href="https://www.wegrowforest.org"
               target="_blank"
               rel="noopener noreferrer"
-              className="w-full h-full flex items-center justify-center"
+              className="w-full h-full flex items-center outfit-medium justify-center"
             >
               www.wegrowforest.org
             </a>

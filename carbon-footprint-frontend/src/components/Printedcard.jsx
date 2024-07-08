@@ -107,7 +107,7 @@ const PrintedcardForm = () => {
                 name="cardWeight"
                 value={formData.cardWeight}
                 onChange={handleChange}
-                className="mt-1 block w-full px-3 py-2 bg-white dark:bg-gray-700 border border-gray-300 dark:border-gray-600 rounded-md shadow-sm focus:outline-none focus:ring-[#9DDE8B] focus:border-[#9DDE8B] sm:text-sm"
+                className="mt-1 block outfit-medium w-full px-3 py-2 bg-white dark:bg-gray-700 border border-gray-300 dark:border-gray-600 rounded-sm shadow-sm focus:outline-none focus:ring-[#9DDE8B] focus:border-[#9DDE8B] sm:text-sm"
               />
             </div>
             <div className="mb-6">
@@ -119,7 +119,7 @@ const PrintedcardForm = () => {
                 name="numberCards"
                 value={formData.numberCards}
                 onChange={handleChange}
-                className="mt-1 block w-full px-3 py-2 bg-white dark:bg-gray-700 border border-gray-300 dark:border-gray-600 rounded-md shadow-sm focus:outline-none focus:ring-[#9DDE8B] focus:border-[#9DDE8B] sm:text-sm"
+                className="mt-1 block outfit-medium w-full px-3 py-2 bg-white dark:bg-gray-700 border border-gray-300 dark:border-gray-600 rounded-sm shadow-sm focus:outline-none focus:ring-[#9DDE8B] focus:border-[#9DDE8B] sm:text-sm"
               />
             </div>
             <div className="mb-6">
@@ -130,7 +130,7 @@ const PrintedcardForm = () => {
                 name="paperType"
                 value={formData.paperType}
                 onChange={handleChange}
-                className="mt-1 block w-full outfit-medium px-3 py-2 bg-white dark:bg-gray-700 border border-gray-300 dark:border-gray-600 rounded-md shadow-sm focus:outline-none focus:ring-[#9DDE8B] focus:border-[#9DDE8B] sm:text-sm"
+                className="mt-1 block w-full outfit-medium px-3 py-2 bg-white dark:bg-gray-700 border border-gray-300 dark:border-gray-600 rounded-sm shadow-sm focus:outline-none focus:ring-[#9DDE8B] focus:border-[#9DDE8B] sm:text-sm"
               >
                 <option value="">Select a paper type</option>
                 <option value="standard">Standard</option>
@@ -146,7 +146,7 @@ const PrintedcardForm = () => {
                 name="printingMethod"
                 value={formData.printingMethod}
                 onChange={handleChange}
-                className="mt-1 block w-full px-3 py-2 outfit-medium bg-white dark:bg-gray-700 border border-gray-300 dark:border-gray-600 rounded-md shadow-sm focus:outline-none focus:ring-[#9DDE8B] focus:border-[#9DDE8B] sm:text-sm"
+                className="mt-1 block w-full px-3 py-2 outfit-medium bg-white dark:bg-gray-700 border border-gray-300 dark:border-gray-600 rounded-sm shadow-sm focus:outline-none focus:ring-[#9DDE8B] focus:border-[#9DDE8B] sm:text-sm"
               >
                 <option value="">Select a printing method</option>
                 <option value="digital">Digital</option>
@@ -161,7 +161,7 @@ const PrintedcardForm = () => {
                 name="LaminationType"
                 value={formData.LaminationType}
                 onChange={handleChange}
-                className="mt-1 block w-full px-3 outfit-medium py-2 bg-white dark:bg-gray-700 border border-gray-300 dark:border-gray-600 rounded-md shadow-sm focus:outline-none focus:ring-[#9DDE8B] focus:border-[#9DDE8B] sm:text-sm"
+                className="mt-1 block w-full px-3 outfit-medium py-2 bg-white dark:bg-gray-700 border border-gray-300 dark:border-gray-600 rounded-sm shadow-sm focus:outline-none focus:ring-[#9DDE8B] focus:border-[#9DDE8B] sm:text-sm"
               >
                 <option value="">Select a lamination type</option>
                 <option value="Glossy">Glossy</option>
@@ -176,7 +176,7 @@ const PrintedcardForm = () => {
                 name="PackingType"
                 value={formData.PackingType}
                 onChange={handleChange}
-                className="mt-1 block w-full px-3 py-2 outfit-medium bg-white dark:bg-gray-700 border border-gray-300 dark:border-gray-600 rounded-md shadow-sm focus:outline-none focus:ring-[#9DDE8B] focus:border-[#9DDE8B] sm:text-sm"
+                className="mt-1 block w-full px-3 py-2 outfit-medium bg-white dark:bg-gray-700 border border-gray-300 dark:border-gray-600 rounded-sm shadow-sm focus:outline-none focus:ring-[#9DDE8B] focus:border-[#9DDE8B] sm:text-sm"
               >
                 <option value="">Select packaging type</option>
                 <option value="Plastic">Plastic</option>

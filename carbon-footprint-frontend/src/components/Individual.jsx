@@ -258,7 +258,7 @@ const Individual = () => {
                 name={field.name}
                 value={formData[field.name]}
                 onChange={handleChange}
-                className="mt-1 block w-full px-3 py-2 bg-white dark:bg-gray-700 border border-gray-300 dark:border-gray-600 rounded-md shadow-sm focus:outline-none focus:ring-[#9DDE8B] focus:border-[#9DDE8B] sm:text-sm"
+                className="mt-1 block outfit-medium w-full px-3 py-2 bg-white dark:bg-gray-700 border border-gray-300 dark:border-gray-600 rounded-sm shadow-sm focus:outline-none focus:ring-[#9DDE8B] focus:border-[#9DDE8B] sm:text-sm"
                 required
               />
             </div>
@@ -275,7 +275,7 @@ const Individual = () => {
               name="primaryFuelSource"
               value={formData.primaryFuelSource}
               onChange={handleChange}
-              className="mt-1 block w-full px-3 py-2 bg-white dark:bg-gray-700 border border-gray-300 dark:border-gray-600 rounded-md shadow-sm focus:outline-none focus:ring-[#9DDE8B] focus:border-[#9DDE8B] sm:text-sm"
+              className="mt-1 block outfit-medium w-full px-3 py-2 bg-white dark:bg-gray-700 border border-gray-300 dark:border-gray-600 rounded-md shadow-sm focus:outline-none focus:ring-[#9DDE8B] focus:border-[#9DDE8B] sm:text-sm"
               required
             >
               <option value="">Select a fuel source</option>
@@ -319,7 +319,7 @@ const Individual = () => {
               name="dietType"
               value={formData.dietType}
               onChange={handleChange}
-              className="mt-1 mb-16 block w-full px-3 py-2 bg-white dark:bg-gray-700 border border-gray-300 dark:border-gray-600 rounded-md shadow-sm focus:outline-none focus:ring-[#9DDE8B] focus:border-[#9DDE8B] sm:text-sm"
+              className="mt-1 mb-16 outfit-medium block w-full px-3 py-2 bg-white dark:bg-gray-700 border border-gray-300 dark:border-gray-600 rounded-md shadow-sm focus:outline-none focus:ring-[#9DDE8B] focus:border-[#9DDE8B] sm:text-sm"
               required
             >
               <option value="">Select a diet type</option>
