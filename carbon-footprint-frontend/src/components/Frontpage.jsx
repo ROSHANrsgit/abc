@@ -26,7 +26,7 @@ const FrontPage = () => {
             <input
               placeholder="Name*"
               type="text"
-              className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-[#40A578] focus:border-[#40A578] sm:text-sm"
+              className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-sm shadow-sm focus:outline-none focus:ring-[#40A578] focus:border-[#40A578] sm:text-sm"
               required
             />
           </div>
@@ -34,7 +34,7 @@ const FrontPage = () => {
             <input
               placeholder="Email*"
               type="email"
-              className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-[#40A578] focus:border-[#40A578] sm:text-sm"
+              className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-sm shadow-sm focus:outline-none focus:ring-[#40A578] focus:border-[#40A578] sm:text-sm"
               required
             />
           </div>
@@ -42,7 +42,7 @@ const FrontPage = () => {
             <input
               placeholder="Mobile Number*"
               type="text"
-              className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-[#40A578] focus:border-[#40A578] sm:text-sm"
+              className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-sm shadow-sm focus:outline-none focus:ring-[#40A578] focus:border-[#40A578] sm:text-sm"
               required
             />
           </div>
@@ -50,7 +50,7 @@ const FrontPage = () => {
             <input
               placeholder="Country*"
               type="text"
-              className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-[#40A578] focus:border-[#40A578] sm:text-sm"
+              className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-sm shadow-sm focus:outline-none focus:ring-[#40A578] focus:border-[#40A578] sm:text-sm"
               required
             />
           </div>
@@ -58,13 +58,13 @@ const FrontPage = () => {
             <input
               placeholder="Address"
               type="text"
-              className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-[#40A578] focus:border-[#40A578] sm:text-sm"
+              className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-sm shadow-sm focus:outline-none focus:ring-[#40A578] focus:border-[#40A578] sm:text-sm"
             />
           </div>
           <div>
             <button
               type="submit"
-              className="w-full py-2 px-4 bg-[#40A578] outfit-medium text-white rounded-md focus:outline-none focus:ring-2 focus:ring-[#40A578]"
+              className="w-full py-2 px-4 bg-[#40A578] outfit-medium text-white rounded-sm focus:outline-none focus:ring-2 focus:ring-[#40A578]"
             >
               Calculate my emission!
             </button>

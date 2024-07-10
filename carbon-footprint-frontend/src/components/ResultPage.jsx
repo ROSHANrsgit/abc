@@ -124,7 +124,7 @@ const EmissionsCard = () => {
           </div>
 
           <div className="lg:flex lg:gap-8 bg-white">
-            <div className="lg:flex-1 p-4 lg:w-[500px] rounded-md mb-4 border-2 border-[#9DDE8B] hover:border-[#40A578]	">
+            <div className="lg:flex-1 p-[35px] lg:w-[500px] rounded-md mb-4 border-2 border-[#9DDE8B] hover:border-[#40A578]	">
               <div className="flex gap-8 items-center border-b-2 border-[#9DDE8B]">
                 <img
                   className="w-28 h-28 lg:w-28 lg:h-28 ml-2"
@@ -146,7 +146,7 @@ const EmissionsCard = () => {
                 </div>
               </div>
               <div>
-                <p className="text-md mt-2 outfit-medium">Total Emissions</p>
+                <p className="text-xs mt-4 outfit-medium">Total Emissions</p>
                 <div className="flex justify-between">
                   <div className="text-6xl outfit-medium ">
                     {location.state.emit.toLocaleString("en-IN", {
@@ -161,16 +161,22 @@ const EmissionsCard = () => {
               </div>
               <div className="flex pt-4 gap-8 justify-between mt-[15px]">
                 <div>
-                  <p className="text-xs outfit-medium">Emission Intensity</p>
+                  <p className="text-[10px] lg:text-xs outfit-medium">
+                    Emissions Intensity
+                  </p>
                   <div className="text-4xl text-left outfit-medium">
                     {intense.toFixed(2)}
                   </div>
                 </div>
                 <div>
-                  <p className="text-xs outfit-medium">Emission Level</p>
+                  <p className="text-[10px] lg:text-xs outfit-medium">
+                    Emissions Level
+                  </p>
                   <div className="text-center mb-2">
                     <div className="text-left">
-                      <div className="outfit-semibold ">{progressname}</div>
+                      <div className="outfit-semibold text-2xl ">
+                        {progressname}
+                      </div>
                       <div className="w-28 lg:w-36 bg-gray-200 rounded-sm">
                         <div
                           className={`h-full text-xs p-2 leading-none rounded-sm ${progressbarbackgroundColor}`}
@@ -181,7 +187,9 @@ const EmissionsCard = () => {
                   </div>
                 </div>
                 <div>
-                  <p className="text-xs outfit-medium">Emissions Percentage</p>
+                  <p className="text-[10px] lg:text-xs outfit-medium">
+                    Emissions Percentage
+                  </p>
                   <div className="text-4xl text-center outfit-medium">
                     {perc.toFixed(0)}
                     {"%"}
@@ -190,10 +198,10 @@ const EmissionsCard = () => {
               </div>
             </div>
 
-            <div className="lg:flex-1 p-4 lg:w-[500px] rounded-md mb-4 border-2 border-[#9DDE8B] hover:border-[#40A578]">
+            <div className="lg:flex-1 p-[35px] lg:w-[500px] rounded-md mb-4 border-2 border-[#9DDE8B] hover:border-[#40A578]">
               <p className="text-xs outfit-medium">Cost to Offset</p>
               <div className="mb-2 flex justify-between items-center border-b-2 border-[#9DDE8B] pb-4">
-                <p className="text-2xl md:text-3xl outfit-bold">
+                <p className="text-2xl md:text-4xl outfit-bold">
                   {"₹"}
                   {offset.toLocaleString("en-IN", {
                     maximumFractionDigits: 0,
@@ -213,7 +221,7 @@ const EmissionsCard = () => {
                     <option value="200%">200%</option>
                   </select>
                   <button
-                    className="bg-[#9DDE8B] text-white outfit-medium px-4 py-2 rounded-md hover:bg-[#40A578] focus:outline-none focus:ring-[#40A578] "
+                    className="bg-[#9DDE8B] text-white outfit-medium px-3 lg:px-4 py-2 rounded-md hover:bg-[#40A578] focus:outline-none focus:ring-[#40A578] "
                     onClick={handlePayment}
                   >
                     Offset Now!
@@ -303,8 +311,8 @@ const EmissionsCard = () => {
             </h2>
           </div>
           <div className="lg:flex lg:gap-8  bg-white">
-            <div className="lg:flex-1 p-4 lg:w-[500px] rounded-md mb-4 border-2 border-[#9DDE8B] hover:border-[#40A578]	">
-              <div className="flex gap-8 items-center border-b-2 border-[#9DDE8B]">
+            <div className="lg:flex-1 p-[35px] lg:w-[500px] rounded-md mb-4 border-2 border-[#9DDE8B] hover:border-[#40A578]	">
+              <div className="flex gap-8 items-center p-2 border-b-2 border-[#9DDE8B]">
                 <img
                   className="w-28 h-28 lg:w-28 lg:h-28 ml-2"
                   src={img}
@@ -314,18 +322,18 @@ const EmissionsCard = () => {
                   <h3 className="text-lg outfit-semibold ">
                     {location.state.source}
                   </h3>
-                  <p className="text-xs outfit-medium">
+                  <p className="text-xs outfit-medium mb-[4px]">
                     Emission Calculated by
                   </p>
                   <p className="text-2xl outfit-bold text-[#40A578]">
                     {formData.name.toUpperCase()}
                   </p>
                   <p className="text-xs outfit-medium">Updated time:</p>
-                  <p className="text-xs outfit-medium">{currentTime}</p>
+                  <p className="text-xs outfit-medium ">{currentTime}</p>
                 </div>
               </div>
               <div>
-                <p className="text-md mt-2 outfit-medium">Total Emissions</p>
+                <p className="text-xs mt-4 outfit-medium">Total Emissions</p>
                 <div className="flex justify-between">
                   <div className="text-6xl outfit-medium">
                     {location.state.emit.toLocaleString("en-IN", {
@@ -338,18 +346,24 @@ const EmissionsCard = () => {
                   </p>
                 </div>
               </div>
-              <div className="flex pt-4 gap-8 justify-between mt-[15px]">
+              <div className="flex pt-4 gap-4 justify-between mt-[15px]">
                 <div>
-                  <p className="text-xs outfit-medium">Emission Intensity</p>
-                  <div className="text-4xl text-left outfit-medium">
+                  <p className="text-[10px] lg:text-xs outfit-medium">
+                    Emissions Intensity
+                  </p>
+                  <div className="text-3xl lg:text-5xl text-left outfit-medium">
                     {intense.toFixed(2)}
                   </div>
                 </div>
-                <div>
-                  <p className="text-xs outfit-medium">Emission Level</p>
+                <div className="lg:ml-4 ">
+                  <p className="text-[10px] lg:text-xs outfit-medium ">
+                    Emissions Level
+                  </p>
                   <div className="text-center mb-2">
                     <div className="text-left">
-                      <div className="outfit-semibold">{progressname}</div>
+                      <div className="outfit-semibold text-3xl">
+                        {progressname}
+                      </div>
                       <div className="w-28 lg:w-36 bg-gray-200 rounded-sm">
                         <div
                           className={`h-full text-xs p-2 leading-none rounded-sm ${progressbarbackgroundColor}`}
@@ -360,7 +374,9 @@ const EmissionsCard = () => {
                   </div>
                 </div>
                 <div>
-                  <p className="text-xs outfit-medium">Emissions Percentage</p>
+                  <p className="text-[10px] lg:text-xs outfit-medium">
+                    Emissions Percentage
+                  </p>
                   <div className="text-4xl text-center outfit-medium">
                     {perc.toFixed(0)}
                     {"%"}
@@ -368,10 +384,10 @@ const EmissionsCard = () => {
                 </div>
               </div>
             </div>
-            <div className=" lg:flex-1 p-4 lg:w-[500px] rounded-md mb-4 border-2 border-[#9DDE8B] hover:border-[#40A578]">
+            <div className=" lg:flex-1 p-[35px] lg:w-[500px] rounded-md mb-4 border-2 border-[#9DDE8B] hover:border-[#40A578]">
               <p className="text-xs outfit-medium">Cost to Offset</p>
               <div className="mb-2 flex justify-between items-center border-b-2 border-[#9DDE8B] pb-4">
-                <p className="text-4xl outfit-bold">
+                <p className="text-2xl lg:text-4xl outfit-bold">
                   {"₹"}
                   {offset.toLocaleString("en-IN", {
                     maximumFractionDigits: 0,
@@ -390,7 +406,7 @@ const EmissionsCard = () => {
                     <option value="200%">200%</option>
                   </select>
                   <button
-                    className="bg-[#9DDE8B] outfit-medium text-white px-4 py-2 rounded-md hover:bg-[#40A578] focus:outline-none focus:ring-[#40A578] "
+                    className="bg-[#9DDE8B] outfit-medium text-white px-3 lg:px-4 py-2 rounded-md hover:bg-[#40A578] focus:outline-none focus:ring-[#40A578] "
                     onClick={handlePayment}
                   >
                     Offset Now!
@@ -398,10 +414,10 @@ const EmissionsCard = () => {
                 </div>
               </div>
               <div className=" mb-2">
-                <p className="text-[10px] text-left outfit-medium">
+                <p className="text-[10px] text-left outfit-medium mt-4">
                   You're fighting climate change by funding these projects:
                 </p>
-                <div className="flex justify-center lg:gap-4 mt-4">
+                <div className="flex justify-center gap-4 lg:gap-4 mt-4">
                   <div className="bg-white outfit-medium rounded-lg ">
                     <div>
                       <a
@@ -409,7 +425,7 @@ const EmissionsCard = () => {
                         target="_blank"
                         rel="noopener noreferrer"
                       >
-                        <div className="relative w-44 h-20 lg:w-[220px] lg:h-[110px] rounded-md mx-auto">
+                        <div className="relative w-40 h-16 lg:w-[190px] lg:h-[110px] rounded-md mx-auto mb-[8px]">
                           <img
                             src={img2}
                             alt=""
@@ -417,7 +433,7 @@ const EmissionsCard = () => {
                           />
                           <div className="absolute inset-0 border-2 border-[#9DDE8B]  hover:border-[#40A578] rounded-md"></div>
                         </div>
-                        <p className="text-[14px] outfit-bold text-left text-[#40A578] leading-[1.2]">
+                        <p className="text-[14px] outfit-bold text-left text-[#40A578] leading-[1]">
                           <span>We Grow Forest Foundation</span>
                           <br />
                           <span>Green India Mission</span>
@@ -435,7 +451,7 @@ const EmissionsCard = () => {
                         target="_blank"
                         rel="noopener noreferrer"
                       >
-                        <div className="relative w-44 h-20 lg:w-[220px] lg:h-[110px] rounded-md mx-auto">
+                        <div className="relative w-36 h-16 lg:w-[220px] lg:h-[110px] rounded-md mx-auto mb-[8px]">
                           <img
                             src={img1}
                             alt=""
@@ -443,7 +459,7 @@ const EmissionsCard = () => {
                           />
                           <div className="absolute inset-0 border-2 border-[#9DDE8B]  hover:border-[#40A578] rounded-md"></div>
                         </div>
-                        <p className="text-[14px] outfit-bold text-left text-[#40A578] leading-[1.2]">
+                        <p className="text-[14px] outfit-bold text-left text-[#40A578] leading-[1]">
                           <span>Clean Shoreline</span>
                           <br />
                           <span>The Sea of Change</span>

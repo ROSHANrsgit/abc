@@ -49,10 +49,10 @@ const MainPage = () => {
   return (
     <div
       style={{ backgroundImage: `url(${backgroundImage})` }}
-      className="bg-cover bg-center flex flex-col lg:flex-row items-center justify-center lg:justify-around h-screen pt-12 lg:pt-0"
+      className="bg-cover bg-center flex flex-col lg:flex-row items-center justify-center lg:justify-around h-screen pt-8 lg:pt-0"
     >
       <div className="lg:items-start">
-        <div className="mb-14 text-5xl lg:text-6xl flex justify-between">
+        <div className="mb-8 md:mb-14 text-4xl md:text-5xl lg:text-6xl flex justify-between">
           <div>
             <h1 className="text-center outfit-bold text-[#40A578] text-start">
               Be a
@@ -68,7 +68,7 @@ const MainPage = () => {
           </div>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-4 mx-auto">
           {cardsData.map((card, index) => (
             <Card
               name={formData.username}

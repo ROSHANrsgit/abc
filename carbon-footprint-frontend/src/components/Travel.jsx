@@ -28,7 +28,7 @@ const TravelForm = () => {
   const [isDom, setIsDom] = useState(false);
   const [isLoading, setisLoading] = useState(false);
   // const api_key = "Yd83oaTfReDdX/oi2hq2aQ==WZwYe2p1O3YFOgoY";
-  const api_key = "ZepdfRL4w8O7jEe2uEcJXQ==NNaKoIbZVQNm4Z3";
+  const api_key = "ZepdfRL4w8O7jEe2uEcJXQ==NNaKoIbZVQNm4Z3k";
   let distance = 0;
   let totalEmissions = 0;
   async function logAirports(airport) {
@@ -247,7 +247,7 @@ const TravelForm = () => {
       case "Flight":
         return (
           <div className="w-[360px] mx-auto md:w-[600px]">
-            <div className="mb-8">
+            <div className="mb-4 lg:mb-8">
               <label className="block outfit-medium text-gray-700">
                 Trip (Round Trip/One way)
               </label>
@@ -256,15 +256,15 @@ const TravelForm = () => {
                 name="tripType"
                 value={formData.tripType}
                 onChange={handleChange}
-                className="mt-1 block outfit-medium w-full px-3 py-2 bg-white dark:bg-gray-700 border border-gray-300 dark:border-gray-600 rounded-sm shadow-sm focus:outline-none focus:ring-[#9DDE8B] focus:border-[#9DDE8B]"
+                className="mt-1 block outfit-medium w-full px-3 py-2 bg-white dark:bg-gray-700 border  dark:border-gray-600 rounded-sm   focus:outline-none  border-[#9DDE8B] focus:border-[#9DDE8B]"
               >
-                <option>Select a trip type</option>
+                9<option>Select a trip type</option>
                 <option>Round Trip</option>
                 <option>One Way</option>
               </select>
             </div>
             <div className="flex flex-row justify-center items-center gap-4">
-              <div className="mb-8 w-[300px]">
+              <div className="mb-4 lg:mb-8 w-[300px]">
                 <label className="block outfit-medium text-gray-700">
                   Origin Airport (code or name)
                 </label>
@@ -274,10 +274,10 @@ const TravelForm = () => {
                   type="text"
                   value={formData.originName}
                   onChange={handleChange}
-                  className="mt-1 block outfit-medium w-full px-3 py-2 bg-white dark:bg-gray-700 border border-gray-300 dark:border-gray-600 rounded-sm shadow-sm focus:outline-none focus:ring-[#9DDE8B] focus:border-[#9DDE8B]"
+                  className="mt-1 block outfit-medium w-full px-3 py-2 bg-white dark:bg-gray-700 border  dark:border-gray-600 rounded-sm   focus:outline-none  border-[#9DDE8B] focus:border-[#9DDE8B]"
                 />
               </div>
-              <div className="mb-8 w-[300px]">
+              <div className="mb-4 lg:mb-8 w-[300px]">
                 <label className="block outfit-medium text-gray-x`700">
                   Destination Airport (code or name)
                 </label>
@@ -287,11 +287,11 @@ const TravelForm = () => {
                   type="text"
                   value={formData.destinationName}
                   onChange={handleChange}
-                  className="mt-1 block outfit-medium w-full px-3 py-2 bg-white dark:bg-gray-700 border border-gray-300 dark:border-gray-600 rounded-sm shadow-sm focus:outline-none focus:ring-[#9DDE8B] focus:border-[#9DDE8B]"
+                  className="mt-1 block outfit-medium w-full px-3 py-2 bg-white dark:bg-gray-700 border  dark:border-gray-600 rounded-sm   focus:outline-none  border-[#9DDE8B] focus:border-[#9DDE8B]"
                 />
               </div>
             </div>
-            <div className="mb-8">
+            <div className="mb-4 lg:mb-8">
               <label className="block outfit-medium text-gray-700">
                 Cabin Class (Economy/Business/First)
               </label>
@@ -301,7 +301,7 @@ const TravelForm = () => {
                 type="text"
                 value={formData.cabinClass}
                 onChange={handleChange}
-                className="mt-1 block outfit-medium w-full px-3 py-2 bg-white dark:bg-gray-700 border border-gray-300 dark:border-gray-600 rounded-sm shadow-sm focus:outline-none focus:ring-[#9DDE8B] focus:border-[#9DDE8B]"
+                className="mt-1 block outfit-medium w-full px-3 py-2 bg-white dark:bg-gray-700 border  dark:border-gray-600 rounded-sm   focus:outline-none  border-[#9DDE8B] focus:border-[#9DDE8B]"
               >
                 <option>Select a cabin class</option>
                 <option>Economy</option>
@@ -309,7 +309,7 @@ const TravelForm = () => {
                 <option>First</option>
               </select>
             </div>
-            <div className="mb-8">
+            <div className="mb-4 lg:mb-8">
               <label className="block outfit-medium text-gray-700">
                 Number of passengers
               </label>
@@ -319,7 +319,7 @@ const TravelForm = () => {
                 type="number"
                 value={formData.numberPassenger}
                 onChange={handleChange}
-                className="mt-1 block w-full outfit-medium px-3 py-2 bg-white dark:bg-gray-700 border border-gray-300 dark:border-gray-600 rounded-sm shadow-sm focus:outline-none focus:ring-[#9DDE8B] focus:border-[#9DDE8B]"
+                className="mt-1 block w-full outfit-medium px-3 py-2 bg-white dark:bg-gray-700 border  dark:border-gray-600 rounded-sm   focus:outline-none  border-[#9DDE8B] focus:border-[#9DDE8B]"
               />
             </div>
           </div>
@@ -327,7 +327,7 @@ const TravelForm = () => {
       default:
         return (
           <div className="w-[360px] mx-auto md:w-[600px]">
-            <div className="mb-8">
+            <div className="mb-4 lg:mb-8">
               <label className="block outfit-medium text-gray-700">
                 CC of your {selectedOption}
               </label>
@@ -337,10 +337,10 @@ const TravelForm = () => {
                 type="number"
                 value={formData.ccVehicle}
                 onChange={handleChange}
-                className="mt-1 block w-full outfit-medium px-3 py-2 bg-white dark:bg-gray-700 border border-gray-300 dark:border-gray-600 rounded-sm shadow-sm focus:outline-none focus:ring-[#9DDE8B] focus:border-[#9DDE8B]"
+                className="mt-1 block w-full outfit-medium px-3 py-2 bg-white dark:bg-gray-700 border  dark:border-gray-600 rounded-sm   focus:outline-none  border-[#9DDE8B] focus:border-[#9DDE8B]"
               />
             </div>
-            <div className="mb-8">
+            <div className="mb-4 lg:mb-8">
               <label className="block outfit-medium text-gray-700">
                 Fuel type
               </label>
@@ -349,7 +349,7 @@ const TravelForm = () => {
                 name="fuelVehicle"
                 value={formData.fuelVehicle}
                 onChange={handleChange}
-                className="mt-1 block outfit-medium w-full px-3 py-2 bg-white outfit-normal dark:bg-gray-700 border border-gray-300 dark:border-gray-600 rounded-sm shadow-sm focus:outline-none focus:ring-[#9DDE8B] focus:border-[#9DDE8B]"
+                className="mt-1 block outfit-medium w-full px-3 py-2 bg-white outfit-normal dark:bg-gray-700 border  dark:border-gray-600 rounded-sm   focus:outline-none  border-[#9DDE8B] focus:border-[#9DDE8B]"
               >
                 <option>Select a fuel type</option>
                 <option>Petrol</option>
@@ -357,7 +357,7 @@ const TravelForm = () => {
                 <option>Electric</option>
               </select>
             </div>
-            <div className="mb-8">
+            <div className="mb-4 lg:mb-8">
               <label className="block outfit-medium text-gray-700">
                 Distance covered (km)
               </label>
@@ -367,10 +367,10 @@ const TravelForm = () => {
                 type="number"
                 value={formData.distCovered}
                 onChange={handleChange}
-                className="mt-1 block outfit-medium w-full px-3 py-2 bg-white dark:bg-gray-700 border border-gray-300 dark:border-gray-600 rounded-sm shadow-sm focus:outline-none focus:ring-[#9DDE8B] focus:border-[#9DDE8B]"
+                className="mt-1 block outfit-medium w-full px-3 py-2 bg-white dark:bg-gray-700 border  dark:border-gray-600 rounded-sm   focus:outline-none  border-[#9DDE8B] focus:border-[#9DDE8B]"
               />
             </div>
-            <div className="mb-8">
+            <div className="mb-4 lg:mb-8">
               <label className="block outfit-medium text-gray-700">
                 Age of your vehicle (yrs)
               </label>
@@ -380,7 +380,7 @@ const TravelForm = () => {
                 type="number"
                 value={formData.ageVehicle}
                 onChange={handleChange}
-                className="mt-1 block outfit-medium w-full px-3 py-2 bg-white dark:bg-gray-700 border border-gray-300 dark:border-gray-600 rounded-sm shadow-sm focus:outline-none focus:ring-[#9DDE8B] focus:border-[#9DDE8B]"
+                className="mt-1 block outfit-medium w-full px-3 py-2 bg-white dark:bg-gray-700 border  dark:border-gray-600 rounded-sm   focus:outline-none  border-[#9DDE8B] focus:border-[#9DDE8B]"
               />
             </div>
           </div>
@@ -395,31 +395,32 @@ const TravelForm = () => {
     >
       <div>
         <div className="rounded-lg w-full">
-          <div className="flex justify-between items-center">
+          <div className="flex justify-between items-center mt-8">
             <h1 className="text-6xl outfit-bold text-left text-[#40A578] dark:text-gray-100 mb-8 mt-4 md:mt-32 xl:mt-8 h-fit">
               Travel
             </h1>
             <img
               src={backarrow}
               alt="Back Arrow"
-              className="h-10 w-10 cursor-pointer"
+              className="h-10 w-10 mb-8 mt-4 md:mt-32 xl:mt-8 h-fit cursor-pointer"
               onClick={handleBackClick}
             />
           </div>
         </div>
-        <div className="flex flex-col xl:flex-row items-center xl:items-start xl:gap-24 justify-center items-center ">
-          <div className="grid grid-cols-3 gap-4 md:gap-12 mb-4">
+        <div className="flex flex-col xl:flex-row items-center  xl:items-start xl:gap-24 justify-center items-center ">
+          <div className="grid grid-cols-3 gap-8 p-4 md:gap-12 mb-4">
             {[flight, truck, bus, car, bike, scooter].map((option, index) => (
               <div
-                className=" shadow-lg w-[100px] md:w-[160px] hover:bg-white hover:border-2 border-[#9DDE8B] rounded-lg cursor-pointer"
+                key={index}
+                className="flex flex-col items-center justify-center  md:p-[21px] bg-[#ffffff60] border-4 border-white shadow-lg w-[100px] md:w-[160px] hover:bg-white hover:border-2 border-[#9DDE8B] rounded-lg cursor-pointer"
                 onClick={() => handleClick(vehicle[index])}
               >
                 <img
                   src={option}
                   alt={option}
-                  className="hover:border-[#9DDE8B] "
+                  className="hover:border-[#9DDE8B] h-24 w-24"
                 />
-                <h1 className="text-center -mt-8 mb-2 outfit-medium">
+                <h1 className="text-center -mt-4 mb-2 outfit-medium text-xl">
                   {vehicle[index].toUpperCase()}
                 </h1>
               </div>
@@ -430,7 +431,7 @@ const TravelForm = () => {
         <div className="flex justify-center">
           <button
             onClick={handleSubmit}
-            className=" mx-auto outfit-medium md:mt-8 bg-[#9DDE8B] hover:bg-[#40A578] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#40A578] text-white px-4 py-2 rounded-md w-[250px]"
+            className=" mx-auto outfit-medium md:mt-8 bg-[#9DDE8B] shadow-sm hover:bg-[#40A578] focus:outline-none focus:ring-2 focus:ring-offset-2  border-[#40A578] text-white px-4 py-2 rounded-sm w-[250px]"
           >
             {!isLoading ? "Calculate my emission!" : "Loading..."}
           </button>

@@ -218,20 +218,20 @@ const CarbonZeroDay = () => {
         </div>
         <div className="flex space-x-2">
           <button
-            className="w-full flex gap-4 lg:gap-16 outfit-medium items-center justify-start py-2 px-2 md:px-4 bg-[#9DDE8B] text-white rounded-md hover:bg-[#40A578]"
+            className="w-full flex gap-4 lg:gap-16 outfit-medium items-center justify-start py-2 px-2 md:px-4 bg-[#9DDE8B] text-white rounded-sm hover:bg-[#40A578]"
             onClick={downloadPDF}
           >
             PDF
             <img src={downloadIcon} alt="Download" className="ml-2 h-4 w-5" />
           </button>
           <button
-            className="w-full flex gap-4 lg:gap-16 outfit-medium items-center justify-start py-2 px-2 md:px-4 bg-[#9DDE8B] text-white rounded-md hover:bg-[#40A578] "
+            className="w-full flex gap-4 lg:gap-16 outfit-medium items-center justify-start py-2 px-2 md:px-4 bg-[#9DDE8B] text-white rounded-sm hover:bg-[#40A578] "
             onClick={downloadJPG}
           >
             JPG
             <img src={downloadIcon} alt="Download" className="ml-2 h-4 w-5" />
           </button>
-          <button className="w-full py-2 px-2 md:px-4 bg-[#9DDE8B] text-white rounded-md hover:bg-[#40A578] ">
+          <button className="w-full py-2 px-2 md:px-4 bg-[#9DDE8B] text-white rounded-sm hover:bg-[#40A578] ">
             <a
               href="https://www.wegrowforest.org"
               target="_blank"
@@ -244,7 +244,7 @@ const CarbonZeroDay = () => {
         </div>
       </div>
       <div className="md:mt-8 -mt-4 bg-white border-8 border-[#40A578] w-[350px] h-[493.5px] md:w-[425.5px] md:h-[600px] flex items-center justify-center">
-        <CertificateDownload ref={certificateRef} emit={100} />
+        <CertificateDownload ref={certificateRef} emission={100} />
       </div>
     </div>
   );

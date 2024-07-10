@@ -26,11 +26,11 @@ export default function SignUp() {
       style={{ backgroundImage: `url(${backgroundImage})` }}
       className="bg-cover bg-center flex flex-col lg:flex-row items-center justify-center lg:justify-around h-screen "
     >
-      <div className="text-left pl-12 lg:pl-0 mb-10 lg:mb-0 sm:pl-6">
-        <h1 className="text-5xl lg:text-7xl outfit-extrabold text-[#40A578] text-left">
+      <div className="text-left lg:pl-0 mb-10 lg:mb-0">
+        <h1 className="text-[44px] sm:text-5xl lg:text-7xl -mb-4 sm:mb-0 outfit-extrabold text-[#40A578] text-left">
           Carbon Zero.Day
         </h1>
-        <h1 className="text-5xl lg:text-7xl outfit-extrabold text-[#9DDE8B] text-left">
+        <h1 className="text-[44px] sm:text-5xl lg:text-7xl outfit-extrabold text-[#9DDE8B] text-left">
           Every Day
         </h1>
       </div>
@@ -39,7 +39,7 @@ export default function SignUp() {
         onSubmit={handleSubmit}
       >
         <form className="space-y-4">
-          <p className="text-white outfit-medium">
+          <p className="text-white outfit-medium leading-none">
             Transform your climate impact by offsetting your carbon footprint
             with Carbon Zero Day.
           </p>
@@ -49,7 +49,7 @@ export default function SignUp() {
               id="name"
               type="text"
               value={name}
-              className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-[#40A578] focus:border-[#40A578] sm:text-sm"
+              className="mt-1 block w-full px-3 py-2  rounded-sm shadow-sm focus:outline-none focus:ring-[#40A578] focus:border-[#40A578] sm:text-sm"
               onChange={(e) => setName(e.target.value)}
               required
             />
@@ -61,7 +61,7 @@ export default function SignUp() {
               type="email"
               id="email"
               value={email}
-              className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-[#40A578] focus:border-[#40A578] sm:text-sm"
+              className="mt-1 block w-full px-3 py-2 rounded-sm shadow-sm focus:outline-none focus:ring-[#40A578] focus:border-[#40A578] sm:text-sm"
               onChange={(e) => setEmail(e.target.value)}
               required
             />
@@ -72,7 +72,7 @@ export default function SignUp() {
               id="phone"
               type="number"
               value={phone}
-              className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-[#40A578] focus:border-[#40A578] sm:text-sm"
+              className="mt-1 block w-full px-3 py-2  rounded-sm shadow-sm focus:outline-none focus:ring-[#40A578] focus:border-[#40A578] sm:text-sm"
               onChange={(e) => setPhone(e.target.value)}
               required
             />
@@ -83,7 +83,7 @@ export default function SignUp() {
               id="country"
               type="text"
               value={country}
-              className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-[#40A578] focus:border-[#40A578] sm:text-sm"
+              className="mt-1 block w-full px-3 py-2  rounded-sm shadow-sm focus:outline-none focus:ring-[#40A578] focus:border-[#40A578] sm:text-sm"
               onChange={(e) => setCountry(e.target.value)}
               required
             />
@@ -94,14 +94,14 @@ export default function SignUp() {
               id="address"
               type="text"
               value={address}
-              className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-[#40A578] focus:border-[#40A578] sm:text-sm"
+              className="mt-1 block w-full px-3 py-2  rounded-sm shadow-sm focus:outline-none focus:ring-[#40A578] focus:border-[#40A578] sm:text-sm"
               onChange={(e) => setAddress(e.target.value)}
             />
           </div>
           <div>
             <button
               type="submit"
-              className="w-full py-2 px-4 bg-[#40A578] text-white rounded-md hover:bg-[#40A578] focus:outline-none focus:ring-2 focus:ring-[#40A578]"
+              className="w-full py-2 px-4 bg-[#40A578] text-white rounded-sm hover:bg-[#40A578] focus:outline-none focus:ring-2 focus:ring-[#40A578]"
             >
               Calculate my emission!
             </button>
