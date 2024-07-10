@@ -268,7 +268,7 @@ const EmissionsCard = () => {
                   </div>
                 </div>
                 <img
-                  className="w-44 h-44 lg:w-48 lg:h-48"
+                  className="w-40 h-40 lg:w-44 lg:h-44"
                   src={qr}
                   alt="QR Code"
                 />
