@@ -104,7 +104,7 @@ const EmissionsCard = () => {
   };
   const [selectedOption, setSelectedOption] = useState("100%"); //
 
-  if (!paymentSuccess) {
+  if (paymentSuccess) {
     return (
       <SuccessPage data={formData} emit={location.state.emit}></SuccessPage>
     );
@@ -411,7 +411,7 @@ const EmissionsCard = () => {
                   </button>
                 </div>
               </div>
-              <div className=" mb-2">
+              <div>
                 <p className="text-[14px] text-left outfit-medium mt-4">
                   You're fighting climate change by funding these projects:
                 </p>
