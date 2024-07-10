@@ -123,8 +123,8 @@ const EmissionsCard = () => {
             </h2>
           </div>
 
-          <div className="lg:flex lg:gap-8 bg-white">
-            <div className="lg:flex-1 p-[35px] lg:w-[500px] rounded-md mb-4 border-2 border-[#9DDE8B] hover:border-[#40A578]	">
+          <div className="lg:flex lg:gap-8">
+            <div className="lg:flex-1 bg-white p-[35px] lg:w-[500px] rounded-md mb-4 lg:mb-0 border-2 border-[#9DDE8B]">
               <div className="flex gap-8 items-center border-b-2 border-[#9DDE8B]">
                 <img
                   className="w-28 h-28 lg:w-28 lg:h-28 ml-2"
@@ -198,7 +198,7 @@ const EmissionsCard = () => {
               </div>
             </div>
 
-            <div className="lg:flex-1 p-[35px] lg:w-[500px] rounded-md mb-4 border-2 border-[#9DDE8B] hover:border-[#40A578]">
+            <div className="lg:flex-1 bg-white p-[35px] lg:w-[500px] rounded-md lg:mb-0  border-2 border-[#9DDE8B] ">
               <p className="text-xs outfit-medium">Cost to Offset</p>
               <div className="mb-2 flex justify-between items-center border-b-2 border-[#9DDE8B] pb-4">
                 <p className="text-2xl md:text-4xl outfit-bold">
@@ -248,7 +248,7 @@ const EmissionsCard = () => {
                     src={infi}
                     alt="Infi Business"
                   />
-                  <p className="text-[10px] outfit-medium">
+                  <p className="text-[14px] outfit-medium">
                     You're fighting climate change by funding these projects
                   </p>
                   <div className="mt-2">
@@ -310,8 +310,8 @@ const EmissionsCard = () => {
               Emissions
             </h2>
           </div>
-          <div className="lg:flex lg:gap-8  bg-white">
-            <div className="lg:flex-1 p-[35px] lg:w-[500px] rounded-md mb-4 border-2 border-[#9DDE8B] hover:border-[#40A578]	">
+          <div className="lg:flex  lg:gap-8">
+            <div className="lg:flex-1 bg-white p-[35px] lg:w-[500px] rounded-md mb-4 lg:mb-0 border-2 border-[#9DDE8B]">
               <div className="flex gap-8 items-center p-2 border-b-2 border-[#9DDE8B]">
                 <img
                   className="w-28 h-28 lg:w-28 lg:h-28 ml-2"
@@ -384,7 +384,7 @@ const EmissionsCard = () => {
                 </div>
               </div>
             </div>
-            <div className=" lg:flex-1 p-[35px] lg:w-[500px] rounded-md mb-4 border-2 border-[#9DDE8B] hover:border-[#40A578]">
+            <div className=" lg:flex-1 bg-white p-[35px] lg:w-[500px] rounded-md border-2 border-[#9DDE8B]">
               <p className="text-xs outfit-medium">Cost to Offset</p>
               <div className="mb-2 flex justify-between items-center border-b-2 border-[#9DDE8B] pb-4">
                 <p className="text-2xl lg:text-4xl outfit-bold">
@@ -414,7 +414,7 @@ const EmissionsCard = () => {
                 </div>
               </div>
               <div className=" mb-2">
-                <p className="text-[10px] text-left outfit-medium mt-4">
+                <p className="text-[14px] text-left outfit-medium mt-4">
                   You're fighting climate change by funding these projects:
                 </p>
                 <div className="flex justify-center gap-4 lg:gap-4 mt-4">
@@ -425,7 +425,7 @@ const EmissionsCard = () => {
                         target="_blank"
                         rel="noopener noreferrer"
                       >
-                        <div className="relative w-40 h-16 lg:w-[190px] lg:h-[110px] rounded-md mx-auto mb-[8px]">
+                        <div className="relative w-36 h-16 lg:w-[205px] lg:h-[110px] rounded-md mx-auto mb-[8px]">
                           <img
                             src={img2}
                             alt=""
@@ -433,15 +433,16 @@ const EmissionsCard = () => {
                           />
                           <div className="absolute inset-0 border-2 border-[#9DDE8B]  hover:border-[#40A578] rounded-md"></div>
                         </div>
-                        <p className="text-[14px] outfit-bold text-left text-[#40A578] leading-[1]">
+                        <p className="text-[15px] outfit-bold text-left text-[#40A578] leading-[1]">
                           <span>We Grow Forest Foundation</span>
                           <br />
                           <span>Green India Mission</span>
                         </p>
                       </a>
                     </div>
-                    <p className="text-[10px] outfit-medium text-left mt-2">
-                      Planting 10 Million Trees by 2030
+                    <p className="text-[14px] outfit-medium text-left mt-2 leading-[1]">
+                      <span>Planting 10 Million Trees</span> <br />
+                      <span>by 2030</span>
                     </p>
                   </div>
                   <div className="bg-white outfit-medium rounded-lg ">
@@ -451,7 +452,7 @@ const EmissionsCard = () => {
                         target="_blank"
                         rel="noopener noreferrer"
                       >
-                        <div className="relative w-36 h-16 lg:w-[220px] lg:h-[110px] rounded-md mx-auto mb-[8px]">
+                        <div className="relative w-36 h-16 lg:w-[205px] lg:h-[110px] rounded-md mx-auto mb-[8px]">
                           <img
                             src={img1}
                             alt=""
@@ -459,19 +460,20 @@ const EmissionsCard = () => {
                           />
                           <div className="absolute inset-0 border-2 border-[#9DDE8B]  hover:border-[#40A578] rounded-md"></div>
                         </div>
-                        <p className="text-[14px] outfit-bold text-left text-[#40A578] leading-[1]">
+                        <p className="text-[15px] outfit-bold text-left text-[#40A578] leading-[1]">
                           <span>Clean Shoreline</span>
                           <br />
                           <span>The Sea of Change</span>
                         </p>
                       </a>
                     </div>
-                    <p className="text-[10px] outfit-medium text-left mt-2 text-left">
-                      Protecting Our Seas from Plastic Pollution
+                    <p className="text-[14px] outfit-medium text-left mt-2 text-left leading-[1]">
+                      <span>Protecting Our Seas from</span> <br />
+                      <span>Plastic Pollution</span>
                     </p>
                   </div>
                 </div>
-                <div className="text-left outfit-medium text-[10px] mt-4">
+                <div className="text-left outfit-medium text-[14px] mt-4">
                   <p>To know more about carbon offsetting</p>
                   <p>
                     call{" "}

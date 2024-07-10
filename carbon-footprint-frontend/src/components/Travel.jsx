@@ -407,19 +407,15 @@ const TravelForm = () => {
             />
           </div>
         </div>
-        <div className="flex flex-col xl:flex-row items-center  xl:items-start xl:gap-24 justify-center items-center ">
+        <div className="flex flex-col xl:flex-row items-center xl:items-start xl:gap-24 justify-center">
           <div className="grid grid-cols-3 gap-8 p-4 md:gap-12 mb-4">
             {[flight, truck, bus, car, bike, scooter].map((option, index) => (
               <div
                 key={index}
-                className="flex flex-col items-center justify-center  md:p-[21px] bg-[#ffffff60] border-4 border-white shadow-lg w-[100px] md:w-[160px] hover:bg-white hover:border-2 border-[#9DDE8B] rounded-lg cursor-pointer"
+                className="flex flex-col items-center justify-center md:p-[21px] bg-[#ffffff60] border-4 border-white shadow-lg w-[100px] md:w-[160px] hover:bg-white hover:border-2 hover:border-[#9DDE8B] rounded-sm cursor-pointer"
                 onClick={() => handleClick(vehicle[index])}
               >
-                <img
-                  src={option}
-                  alt={option}
-                  className="hover:border-[#9DDE8B] h-24 w-24"
-                />
+                <img src={option} alt={option} className="h-24 w-24" />
                 <h1 className="text-center -mt-4 mb-2 outfit-medium text-xl">
                   {vehicle[index].toUpperCase()}
                 </h1>
@@ -428,6 +424,7 @@ const TravelForm = () => {
           </div>
           <div>{renderForm()}</div>
         </div>
+
         <div className="flex justify-center">
           <button
             onClick={handleSubmit}

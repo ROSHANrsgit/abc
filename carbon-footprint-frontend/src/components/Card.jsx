@@ -7,7 +7,7 @@ const Card = ({ image, title1, title2, buttonText, styleClass }) => {
 
   return (
     <Link to={url}>
-      <div className="hover:bg-white bg-[#ffffff60]  border-4 border-white outfit-medium hover:border-2 hover:border-[#9DDE8B] p-8 rounded-lg shadow-lg flex flex-row lg:flex-col justify-center lg:justify-around items-center w-[300px] ">
+      <div className="hover:bg-white bg-[#ffffff60]  border-2 border-white outfit-medium hover:border-2 hover:border-[#9DDE8B] p-8 rounded-lg shadow-lg flex flex-row lg:flex-col justify-center lg:justify-around items-center w-[300px] ">
         <div>
           <img
             src={image}
