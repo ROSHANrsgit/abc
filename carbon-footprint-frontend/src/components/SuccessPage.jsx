@@ -56,7 +56,7 @@ const Certificate = React.forwardRef((props, ref) => {
           className="w-36 mx-auto"
         />
       </div>
-      <div className="text-[9px] text-center outfit-medium mb-[4px]">
+      <div className="text-[9px] text-center outfit-medium mb-[6px]">
         www.carbonzero.day
       </div>
 
@@ -67,7 +67,7 @@ const Certificate = React.forwardRef((props, ref) => {
 
       <div>
         <div
-          className="relative flex justify-center h-[158.5px] md:h-[215px] -mt-[2px]"
+          className="relative flex justify-center h-[158.5px] md:h-[215px] -mt-[3px]"
           style={{
             backgroundImage: `url(${footer})`,
             backgroundSize: "cover",
@@ -161,7 +161,7 @@ const CarbonZeroDay = () => {
   };
   const downloadPDF = () => {
     const input = certificateRef.current;
-    const scale = 2; // Increase this for higher resolution
+    const scale = 3; // Increase this for higher resolution
     html2canvas(input, { scale: scale }).then((canvas) => {
       const imgData = canvas.toDataURL("image/png", 2.0);
       const pdf = new jsPDF({

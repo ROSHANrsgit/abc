@@ -104,7 +104,7 @@ const EmissionsCard = () => {
   };
   const [selectedOption, setSelectedOption] = useState("100%"); //
 
-  if (paymentSuccess) {
+  if (!paymentSuccess) {
     return (
       <SuccessPage data={formData} emit={location.state.emit}></SuccessPage>
     );
@@ -146,7 +146,7 @@ const EmissionsCard = () => {
                 </div>
               </div>
               <div>
-                <p className="text-xs mt-4 outfit-medium">Total Emissions</p>
+                <p className="text-xs mt-8 outfit-medium">Total Emissions</p>
                 <div className="flex justify-between">
                   <div className="text-6xl outfit-medium ">
                     {location.state.emit.toLocaleString("en-IN", {
@@ -164,7 +164,7 @@ const EmissionsCard = () => {
                   <p className="text-[10px] lg:text-xs outfit-medium">
                     Emissions Intensity
                   </p>
-                  <div className="text-4xl text-left outfit-medium">
+                  <div className="text-5xl text-left outfit-medium">
                     {intense.toFixed(2)}
                   </div>
                 </div>
@@ -190,7 +190,7 @@ const EmissionsCard = () => {
                   <p className="text-[10px] lg:text-xs outfit-medium">
                     Emissions Percentage
                   </p>
-                  <div className="text-4xl text-center outfit-medium">
+                  <div className="text-5xl text-center outfit-medium">
                     {perc.toFixed(0)}
                     {"%"}
                   </div>
@@ -210,7 +210,7 @@ const EmissionsCard = () => {
                 </p>
                 <div className="flex flex-around gap-4">
                   <select
-                    className=" text-center border border-gray-300 hover:border-gray-400 rounded"
+                    className=" text-left outfit-medium bg-[#efefef] rounded "
                     onChange={handleSelectChange}
                   >
                     <option value="50%">50%</option>
@@ -248,7 +248,7 @@ const EmissionsCard = () => {
                     src={infi}
                     alt="Infi Business"
                   />
-                  <p className="text-[14px] outfit-medium">
+                  <p className="text-[14px] outfit-medium leading-[1]">
                     You're fighting climate change by funding these projects
                   </p>
                   <div className="mt-2">
@@ -268,14 +268,14 @@ const EmissionsCard = () => {
                   </div>
                 </div>
                 <img
-                  className="w-40 h-40 lg:w-44 lg:h-44"
+                  className="w-40 h-40 lg:w-42 lg:h-42 mt-8"
                   src={qr}
                   alt="QR Code"
                 />
                 {/* Added Infi Image */}
               </div>
 
-              <div className="text-left outfit-medium text-[10px] mt-8 lg:mt-4">
+              <div className="text-left outfit-medium text-[14px] mt-8 lg:mt-4 leading-[1]">
                 <p>To know more about carbon offsetting</p>
                 <p>
                   call{" "}
@@ -291,8 +291,6 @@ const EmissionsCard = () => {
                   </a>
                 </p>
               </div>
-
-              <div className="mt-4"></div>
             </div>
           </div>
         </div>
@@ -333,7 +331,7 @@ const EmissionsCard = () => {
                 </div>
               </div>
               <div>
-                <p className="text-xs mt-4 outfit-medium">Total Emissions</p>
+                <p className="text-xs mt-8 outfit-medium">Total Emissions</p>
                 <div className="flex justify-between">
                   <div className="text-6xl outfit-medium">
                     {location.state.emit.toLocaleString("en-IN", {
@@ -351,7 +349,7 @@ const EmissionsCard = () => {
                   <p className="text-[10px] lg:text-xs outfit-medium">
                     Emissions Intensity
                   </p>
-                  <div className="text-4xl text-left outfit-medium">
+                  <div className="text-5xl text-left outfit-medium">
                     {intense.toFixed(2)}
                   </div>
                 </div>
@@ -377,7 +375,7 @@ const EmissionsCard = () => {
                   <p className="text-[10px] lg:text-xs outfit-medium">
                     Emissions Percentage
                   </p>
-                  <div className="text-4xl text-center outfit-medium">
+                  <div className="text-5xl text-center outfit-medium">
                     {perc.toFixed(0)}
                     {"%"}
                   </div>
@@ -473,7 +471,7 @@ const EmissionsCard = () => {
                     </p>
                   </div>
                 </div>
-                <div className="text-left outfit-medium text-[14px] mt-4">
+                <div className="text-left outfit-medium text-[14px] mt-4 leading-[1]">
                   <p>To know more about carbon offsetting</p>
                   <p>
                     call{" "}
