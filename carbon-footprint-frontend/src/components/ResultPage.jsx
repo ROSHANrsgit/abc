@@ -159,7 +159,7 @@ const EmissionsCard = () => {
                   </p>
                 </div>
               </div>
-              <div className="flex pt-4 gap-8 justify-between mt-[15px]">
+              <div className="flex pt-4 gap-4 justify-between mt-[35px]">
                 <div>
                   <p className="text-[10px] lg:text-xs outfit-medium">
                     Emissions Intensity
@@ -168,18 +168,18 @@ const EmissionsCard = () => {
                     {intense.toFixed(2)}
                   </div>
                 </div>
-                <div>
+                <div className="lg:ml-4">
                   <p className="text-[10px] lg:text-xs outfit-medium">
                     Emissions Level
                   </p>
                   <div className="text-center mb-2">
                     <div className="text-left">
-                      <div className="outfit-semibold text-2xl ">
+                      <div className="outfit-semibold text-2xl mb-[2px]">
                         {progressname}
                       </div>
-                      <div className="w-28 lg:w-36 bg-gray-200 rounded-sm">
+                      <div className="w-28 lg:w-36 bg-gray-200 rounded-sm  mb-[2px]">
                         <div
-                          className={`h-full text-xs p-2 leading-none rounded-sm ${progressbarbackgroundColor}`}
+                          className={`h-full text-xs p-1 rounded-sm ${progressbarbackgroundColor}`}
                           style={{ width: progressbarwidth }}
                         ></div>
                       </div>
@@ -346,27 +346,27 @@ const EmissionsCard = () => {
                   </p>
                 </div>
               </div>
-              <div className="flex pt-4 gap-4 justify-between mt-[15px]">
+              <div className="flex pt-4 gap-4 justify-between mt-[35px]">
                 <div>
                   <p className="text-[10px] lg:text-xs outfit-medium">
                     Emissions Intensity
                   </p>
-                  <div className="text-3xl lg:text-5xl text-left outfit-medium">
+                  <div className="text-4xl text-left outfit-medium">
                     {intense.toFixed(2)}
                   </div>
                 </div>
-                <div className="lg:ml-4 ">
-                  <p className="text-[10px] lg:text-xs outfit-medium ">
+                <div className="lg:ml-4">
+                  <p className="text-[10px] lg:text-xs outfit-medium">
                     Emissions Level
                   </p>
                   <div className="text-center mb-2">
                     <div className="text-left">
-                      <div className="outfit-semibold text-3xl">
+                      <div className="outfit-semibold text-2xl mb-[2px]">
                         {progressname}
                       </div>
-                      <div className="w-28 lg:w-36 bg-gray-200 rounded-sm">
+                      <div className="w-28 lg:w-36 bg-gray-200 rounded-sm  mb-[2px]">
                         <div
-                          className={`h-full text-xs p-2 leading-none rounded-sm ${progressbarbackgroundColor}`}
+                          className={`h-full text-xs p-1 rounded-sm ${progressbarbackgroundColor}`}
                           style={{ width: progressbarwidth }}
                         ></div>
                       </div>
